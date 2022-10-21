@@ -1,5 +1,5 @@
 <?php
-    require_once("Models/model.php");
+    require_once("./Models/ProductModel.php");
 
     class Controller
     {
@@ -7,7 +7,7 @@
 
         public function __construct()
         {
-            $this->model = new Model();
+            $this->model = new ProductModel();
         }
 
         public function invoke()

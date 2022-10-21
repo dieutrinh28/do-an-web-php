@@ -1,18 +1,18 @@
 <?php
-    require_once("Models/product.php");
-    require_once("Modules/db_module.php");
+    require_once("./Classes/Product.php");
+    require_once("./Modules/db_module.php");
 
-    class Model
+    class ProductModel
     {
         public function getProductList()
         {
             $link = null;
             taoKetNoi($link);
-            $result = chayTruyVanTraVeDL($link, "select * from db_");
+            $result = chayTruyVanTraVeDL($link, "select * from tbl_sanpham");
             $data = array();
             while($rows = mysqli_fetch_assoc($result))
             {
-                $product = new Product($rows["id"], $rows["price"], $rows["description"]);
+                $product = new Product($rows["id_sanpham"], $rows["ten_sanpham"], $rows["gia_sanpham"]);
                 array_push($data, $product);
             }
             giaiPhongBoNho($link, $result);
@@ -28,4 +28,3 @@
                 return null;
         }
     }
-?>
