@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    --bg-grey: #885a5a;
+    --bg-green: #84b082;
+    --bg-dark-green: #5d7565;
+}
+/* carousel */
+.carousel .carousel-item{
+    height: 650px;
+    overflow: hidden;
+}
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* */
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+  
+/*  */
+.item{
+    border: none !important;
+    padding: 0;
+    padding: 10px;
+}
+.item .item-img{
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+}
+.item .item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.item .items-content{
+    padding: 0;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: 92%;
+    height: 92%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    font-weight: 700;
+    opacity: 0;
+}
+.item:hover .items-content{  
+    opacity: 0.8;
+} 
+.item:hover .items-content h5{
+    transition: 1s;
+    transform: translate(0%, 330%);
+}
