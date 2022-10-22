@@ -1,5 +1,5 @@
 <?php
-    require_once("../do-an-web-php/Controllers/userContronller.php");
+    require_once("Controllers/ProductController.php");
     $controller = new ProductController();
     $controller->invoke();
 ?>
