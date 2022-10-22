@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    --bg-grey: #885a5a;
+    --bg-green: #84b082;
+    --bg-dark-green: #5d7565;
+}
+.container-fluid{
+    padding: 0 !important;
+}
+.my-footer{
+    margin-top: 30px;
+    padding: 10px 66px;
+    background: var(--bg-grey);
+    color: #fff;
+    align-items: center;
+}
+.row{
+    align-items: center;
+}
+.my-footer img{
+    width: 30%;
+}
+.my-footer .support-text i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.my-footer .support-text a{
+    color: #fff;
+}
+.my-footer .support-text:hover a, i{
+    color: var(--bg-green);
+    text-decoration: none;
+}
+.my-footer .support-text:hover i{
+    color: var(--bg-green);
+    cursor: pointer;
+}
+.my-footer .footer-btn-signin{
+    background: var(--bg-green);
+    color: #fff;
+}
+.my-footer .footer-btn-signin:hover{
+    background-color: var(--bg-dark-green);
+    color: #fff;
+}
+.my-footer .footer-btn-signup{
+    border: 1px solid var(--bg-green);
+    color: #fff;
+}
+.my-footer .footer-btn-signup:hover{
+    background-color: var(--bg-dark-green);
+    color: #fff;
+    border: none;
+}
