@@ -1,7 +1,7 @@
 <?php
     require_once("./Models/ProductModel.php");
 
-    class Controller
+    class ProductController
     {
         public $model;
 

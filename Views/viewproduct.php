@@ -6,7 +6,8 @@
     <?php
     echo "<b>ID: </b>" . $product->getId() . "<br/>";
     echo "<b>Name: </b>" . $product->getName() . "<br/>";
-    echo "<b>Price: </b>" . $product->getPrice() . "<br/>";
+    echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
+    echo "Thêm vào giỏ hàng";
     ?>
 </body>
 

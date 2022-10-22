@@ -1,5 +1,5 @@
 <?php
-    function themvaogiohang($hang) {
+    function addToCart($hang) {
         if(isset($_SESSION['giohang'])) {
             $giohang = $_SESSION['giohang'];
             if(!array_key_exists($hang["id"], $giohang))
@@ -14,21 +14,21 @@
             $_SESSION['giohang'] = $giohang;
         }
     }
-    function xoahangkhoigio($key) {
+    function deleteFromCart($key) {
         if(isset($_SESSION['giohang'])) {
             $giohang = $_SESSION['giohang'];
             unset($giohang[$key]);
             $_SESSION['giohang'] = $giohang;
         }
     }
-    function capnhathangtronggio($key, $soluong) {
+    function updateCart($key, $soluong) {
         if(isset($_SESSION['giohang'])) {
             $giohang = $_SESSION['giohang'];
             $giohang[$key]['soluong'] = $soluong;
             $_SESSION['giohang'] = $giohang;
         }
     }
-    function tinhtien() {
+    function payment() {
         $sum = 0;
         $giohang = $_SESSION['giohang'];
         foreach($giohang as $v)
