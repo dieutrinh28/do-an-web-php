@@ -1,40 +1,52 @@
 <?php
 class User
 {
-
     private $id;
-    private $username;
+    private $fullname;
     private $password;
-    private $email;
+    private $sdt;
     private $address;
+    private $username;
+    private $decentralization;
 
-    public function getid()
+    public function getId()
     {
         return $this->id;
     }
-    public function getusername()
+    public function getFullname()
     {
-        return $this->username;
+        return $this->fullname;
     }
-    public function getpassword()
+    public function getSdt()
+    {
+        return $this->sdt;
+    }
+    public function getPassword()
     {
         return $this->password;
     }
-    public function getemail()
-    {
-        return $this->email;
-    }
-    public function getaddress()
+
+    public function getAddress()
     {
         return $this->address;
     }
+    public function getUsername()
+    {
+        return $this->username;
+    }
+    public function getDecentralization()
+    {
+        return $this->decentralization;
+    }
 
-    public function __construct($id, $username, $password, $email, $address)
+    public function __construct($id, $fullname, $sdt, $password, $address, $username, $decentralization)
     {
         $this->id = $id;
-        $this->username = $username;
+        $this->fullname = $fullname;
+        $this->sdt = $sdt;
         $this->password = $password;
-        $this->email = $email;
         $this->address = $address;
+        $this->username = $username;
+        $this->decentralization = $decentralization;
     }
 }

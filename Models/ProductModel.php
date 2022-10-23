@@ -8,10 +8,10 @@ class ProductModel
     {
         $link = null;
         taoKetNoi($link);
-        $result = chayTruyVanTraVeDL($link, "select * from tbl_sanpham");
+        $result = chayTruyVanTraVeDL($link, "select * from tbl_products");
         $data = array();
         while ($rows = mysqli_fetch_assoc($result)) {
-            $product = new Product($rows["id_sanpham"], $rows["ten_sanpham"], $rows["mota_sanpham"], $rows["hinhanh_sanpham"], $rows["id_loaisanpham"]);
+            $product = new Product($rows["pro_id"], $rows["pro_name"], $rows["pro_des"], $rows["price"], $rows["pic"], $rows["cat_id"]);
             array_push($data, $product);
         }
         giaiPhongBoNho($link, $result);
@@ -29,10 +29,10 @@ class ProductModel
     {
         $link = null;
         taoKetNoi($link);
-        $result = chayTruyVanTraVeDL($link, "select * from tbl_sanpham where ten_sanpham like '%" . $keyword . "%'");
+        $result = chayTruyVanTraVeDL($link, "select * from tbl_products where pro_name like '%" . $keyword . "%'");
         $data = array();
         while ($rows = mysqli_fetch_assoc($result)) {
-            $product = new Product($rows["id_sanpham"], $rows["ten_sanpham"], $rows["mota_sanpham"], $rows["hinhanh_sanpham"], $rows["id_loaisanpham"]);
+            $product = new Product($rows["pro_id"], $rows["pro_name"], $rows["pro_des"], $rows["price"], $rows["pic"], $rows["cat_id"]);
             array_push($data, $product);
         }
         giaiPhongBoNho($link, $result);

@@ -1,4 +1,9 @@
 <?php
+    $_SESSION['giohang'] = [
+        1 => ['ten' => 'OPPO', 'soluong' => 3, 'gia' => 45],
+        2 => ['ten' => 'OPPO', 'soluong' => 3, 'gia' => 45],
+        3 => ['ten' => 'OPPO', 'soluong' => 3, 'gia' => 45]
+    ];
     function addToCart($hang) {
         if(isset($_SESSION['giohang'])) {
             $giohang = $_SESSION['giohang'];
@@ -35,4 +40,3 @@
             $sum+=$v['soluong']*$v['gia'];
         return number_format($sum);
     }
-?>
