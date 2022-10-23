@@ -39,13 +39,14 @@
             <div class="emojis">
                 <a href=""><i class="fas fa-angle-left"></i></a>
                 <?php
-                echo "<h1 id='pro_name'>" . $product->getName() . "</h1>";
+                
                 ?>
 
                 <a href=""><i class="fas fa-angle-right"></i></i></a>
             </div>
             <div id='content_border'>
                 <?php
+                echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
                 echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
                 ?>
             </div>
