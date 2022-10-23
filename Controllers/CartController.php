@@ -40,4 +40,3 @@
             $sum+=$v['soluong']*$v['gia'];
         return number_format($sum);
     }
-?>
