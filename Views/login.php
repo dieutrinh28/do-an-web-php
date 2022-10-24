@@ -25,11 +25,11 @@
         <form class="w-50 mx-auto">
             <div class="form-group">
                 <p class="form-text">User name</p>
-                <input type="text" class="form-control" name="name" placeholder="Ex: Bich Ngan" required autocomplete>
+                <input type="text" class="form-control" name="username" placeholder="Ex: Bich Ngan" required autocomplete>
                 <p class="form-text mt-3">Password</p>
-                <input type="text" class="form-control" name="passwork" placeholder="password" required autocomplete>
+                <input type="password" class="form-control" name="password" placeholder="password" required autocomplete>
             </div>
-            <a class="forgot-password d-flex">Forgot the password?</a>
+            <a class="forgot-password d-flex">Forgot password?</a>
             <div class="form-checkbox d-flex">
                 <input type="checkbox" name="remember">
                 <p>Remember me</p>
