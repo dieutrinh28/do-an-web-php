@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furni3dots - Login</title>
-    <link rel="stylesheet" href="../Public/CSS/header.css">
-    <link rel="stylesheet" href="../Public/CSS/login.css">
-    <link rel="stylesheet" href="../Public/CSS/footer.css">
+    <link rel="stylesheet" href="../../Public/CSS/header.css">
+    <link rel="stylesheet" href="../../Public/CSS/signin.css">
+    <link rel="stylesheet" href="../../Public/CSS/footer.css">
 
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -18,7 +18,7 @@
 </head>
 <body>
     <?php
-        include_once './blocks/header.php'
+        include_once '../blocks/header.php'
     ?>
     <div class="container login mt-5">
         <h4 class="text-center">Login</h4>
@@ -27,7 +27,7 @@
                 <p class="form-text">User name</p>
                 <input type="text" class="form-control" name="name" placeholder="Ex: Bich Ngan" required autocomplete>
                 <p class="form-text mt-3">Password</p>
-                <input type="text" class="form-control" name="passwork" placeholder="password" required autocomplete>
+                <input type="text" class="form-control" name="password" placeholder="password" required autocomplete>
             </div>
             <a class="forgot-password d-flex">Forgot the password?</a>
             <div class="form-checkbox d-flex">
@@ -41,7 +41,7 @@
         </form>
     </div>
     <?php
-        include_once './blocks/footer.php'
+        include_once '../blocks/footer.php'
     ?>
 </body>
 

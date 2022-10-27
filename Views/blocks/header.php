@@ -17,7 +17,7 @@
         <div class="container-fluid header">
             <nav class="navbar navbar-expand-lg">
                 <div class="navbar-logo" href="#">
-                    <img src="../../Assets/logo.jpg" alt="">
+                    <img src="../../Assets/logo.png" alt="">
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">

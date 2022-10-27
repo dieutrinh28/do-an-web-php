@@ -13,20 +13,12 @@
     padding: 10px 50px !important;
     background-color: var(--bg-grey);
 }
-@media only screen and (min-width: 576px){
-    .navbar img{
-        width: 40%;
-    }
+.navbar-logo{
+    width: 25%;
+    overflow: hidden;
 }
-@media only screen and (min-width: 992px){
-    .navbar img{
-        width: 40%;
-    }
-}
-@media only screen and (min-width: 1200px){
-    .navbar img{
-        width: 50%;
-    }
+.navbar img{
+    width: 45%;
 }
 .navbar img:hover{
     cursor: pointer;

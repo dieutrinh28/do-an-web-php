@@ -14,10 +14,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container-fluid my-footer px-5 py-3">
+        <div class="container-fluid my-footer px-5 py-3 mt-5">
             <div class="row">
                 <div class="logo col-6">
-                    <img src="../../Assets/logo.jpg" alt="">
+                    <img src="../../Assets/logo.png" alt="">
                     <p>© Photo, Inc. 10-2022. From 3 dots with love!</p>
                 </div>
                 <div class="support col-4">
