@@ -25,6 +25,20 @@ class ProductModel
                 return $product;
         return null;
     }
+    public function getForCategory($category)
+    {
+        $link = null;
+        taoKetNoi($link);
+        $cat_id = chayTruyVanTraVeDL($link, "SELECT cat_id FROM tbl_categories WHERE cat_name LIKE " . $category . "");
+        $result = chayTruyVanTraVeDL($link, "SELECT * FROM tbl_products WHERE cat_id LIKE '%" . $cat_id . "%'");
+        $data = array();
+        while ($rows = mysqli_fetch_assoc($result)) {
+            $product = new Product($rows["pro_id"], $rows["pro_name"], $rows["pro_des"], $rows["price"], $rows["pic"], $rows["cat_id"]);
+            array_push($data, $product);
+        }
+        giaiPhongBoNho($link, $result);
+        return $data;
+    }
     public function searchProduct($keyword)
     {
         $link = null;

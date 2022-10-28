@@ -23,5 +23,10 @@
                 include "Views/viewproduct.php";
             }
         }
+        public function getForCategory($category)
+        {
+            $products = $this->model->getForCategory($category);
+            include "Views/productlist.php";
+        }
     }
 ?>

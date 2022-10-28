@@ -27,6 +27,12 @@
     ?>
     <!-- body -->
     <div class="container-fluid homepage px-5">
+        <div class='category'>
+        <!-- <?php
+            foreach ($categories as $category)
+                echo "<h5>".$category->getName()."</h5>"
+        ?> -->
+        </div>
         <div class='product py-5'>
             <div class='row'>
                 <?php
