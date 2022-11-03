@@ -23,7 +23,7 @@
 <body>
     <!-- header -->
     <?php
-    require_once("../do-an-web-php/Views/blocks/header.php");
+    require_once("./blocks/header.php");
     ?>
     <!-- body -->
     <div class="container-fluid homepage px-5">
@@ -35,7 +35,7 @@
                             <div class =' card item chair'>
                                 <a href = 'index.php?productid=" . $product->getId() . "' >
                                     <div class='item-img'>
-                                        <img src='../do-an-web-php/Assets/img/" . $product->getImage() . "'>
+                                        <img src='../Assets/img/" . $product->getImage() . "'>
                                     </div>
                                     <div class='card-body items-content'>
                                         <h5 class='card-title items-content__name'>" . $product->getName() . "</h5>
@@ -50,7 +50,7 @@
 
     <!--Footer-->
     <?php
-    require_once("../do-an-web-php/Views/blocks/footer.php");
+    require_once("./blocks/footer.php");
     ?>
     <!-- link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

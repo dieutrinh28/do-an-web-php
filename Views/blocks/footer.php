@@ -16,24 +16,32 @@
     <body>
         <div class="container-fluid my-footer px-5 py-3 mt-5">
             <div class="row">
-                <div class="logo col-6">
+                <div class="logo col-5">
                     <img src="../../Assets/logo.png" alt="">
                     <p>© Photo, Inc. 10-2022. From 3 dots with love!</p>
                 </div>
-                <div class="support col-4">
+                <div class="support col-3">
                     <h4 class="mb-3">Customer care support</h4>
                     <p class="d-flex support-text mb-2">
                         <i class="far fa-envelope"></i>
                         <a href="">Furni3dots@gmail.come</a>
                     </p>
                     <p class="d-flex support-text mb-2">
-                        <i class="far fa-phone"></i>
+                        <i class="fas fa-phone-alt"></i>
                         <a href="">0935050924</a>
                     </p>    
                 </div>
-                <div class="form-login col-2 text-right">
-                    <button class="btn footer-btn-signin px-4 mb-3">Sign in</button>
-                    <button class="btn footer-btn-signup px-4 ml-3">Sign up</button>
+                <div class="infomaion col-2">
+                    <h4 class="mb-3">Customer Service</h4>
+                    <a href="">Help & Contact Us</a>
+                    <a href="">Returns & Refunds</a>
+                    <a href="">Order Tracking</a>
+                </div>
+                <div class="infomaion col-2 text-right">
+                    <h4 class="mb-3">Information</h4>
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                    <a href="">Online Stores</a>
                 </div>
             </div>
         </div>
