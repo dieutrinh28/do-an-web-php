@@ -1,6 +1,7 @@
 <?php
 require_once("./Classes/Product.php");
 require_once("./Modules/db_module.php");
+session_start();
 
 class ProductModel
 {
@@ -38,4 +39,7 @@ class ProductModel
         giaiPhongBoNho($link, $result);
         return $data;
     }
+  
+    
+
 }

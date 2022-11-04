@@ -1,94 +1,106 @@
 <?php
 require_once("../do-an-web-php/Classes/User.php");
 require_once("../do-an-web-php/Modules/db_module.php");
+require_once("../do-an-web-php/Models/validate.php");
 class UserModel
 {
     public function getUserList()
     {
         $link = null;
         taoKetNoi($link);
-        $result = chayTruyVanTraVeDL($link, "select * from tbl_users");
+        $result = chayTruyVanTraVeDL($link, "select * from tbl_user");
         $data = array();
         while ($rows = mysqli_fetch_assoc($result)) {
-            $user = new User($rows['user_id'], $rows['user_fullname'], $rows['user_sdt'], $rows['user_pass'], $rows['user_address'], $rows['user_username'], $rows['decen_id']);
+            $user = new User($rows['id'], $rows['name'], $rows['phonenum'], $rows['password'], $rows['email'], $rows['username'], $rows['address']);
             array_push($data, $user);
         }
         giaiPhongBoNho($link, $result);
         return $data;
     }
-    public function checkUnique($fullname, $password, $email, $address)
+    public function exitUserName($username)
     {
-        $allusers = $this->getUserList();
-        foreach ($allusers as $user) {
-            if (
-                $user->getusername === $fullname || $user->getemail === $email ||
-                $user->getpassword === $password || $user->getaddress === $address
-            ) {
-                return false;
+        $allUser = $this->getUserList();
+        $count = 0;
+        for($i=0;$i<count($allUser);$i++)
+        {
+            if($allUser[$i]->getUsername() == $username)
+            {
+                $count ++;
             }
         }
-        return true;
+        if($count == 0)
+            return true;
+        else    
+            return false;
     }
-    public function register($fullname, $sdt, $password, $address, $username)
+    public function register($username, $password, $email, $phoneNum, $address, $name,$confirmPass)
     {
         $link = null;
         taoKetNoi($link);
-        $query = "INSERT INTO `tbl_users` (`user_fullname`, `user_sdt`, `user_pass`, `user_address`, `user_username`, `decen_id`) VALUES
-                        ($fullname, $sdt, $password, $address, $username, 2)";
-        $result2 = mysqli_query($link, $query);
-        if ($result2) {
-            header("Location: signup.php?success=Your account has been created successfully");
-            exit();
-        } else {
-            header("Location: signup.php?error=unknown error occurred");
-            exit();
-        }
-    }
-    public function getUserId($id)
-    {
-        $allusers = $this->getuserlist();
-        foreach ($allusers as $user) {
-            if ($user->getid() === $id)
-                return $user;
-        }
-        return null;
-    }
-    public function getUsername($username)
-    {
-        $allusers = $this->getuserlist();
-        foreach ($allusers as $user) {
-            if ($user->getusername() === $username) {
-                return $user;
+        $valid = $password == $confirmPass;
+        $valid =  validateEmail($email);
+        $valid =  validateLenUp($username);
+        $valid =  validateLenUp($password);
+        if ($valid) {
+            if(existUsername($link,$username)>0)
+            {
+                echo "this account has been exist".existUsername($link,$username);
+                echo "name: ".$username;
+                return false;
+            }
+            else
+            {
+                $query = "INSERT INTO tbl_user (username,password,email,name,phonenum,address) VALUES
+                        ('$username','$password','$email','$name','$phoneNum','$address' )";
+                if (mysqli_query($link, $query))
+                {
+                    return true;
+                } 
+                else 
+                {
+                    return false;
+                }
+                    
             }
         }
-        return null;
+        else
+        {
+            return false;
+        }
     }
-    public function getFullname($fullname)
+
+    public function Login($username, $password)
+    {
+        $allusers = $this->getUserList();
+        $count = 0;
+        foreach ($allusers as $user) {
+            if ($username == $user->getUsername() && $password == $user->getPassword())
+                $count++;
+        }
+        if ($count != 0)
+            return true;
+        else
+            return false;
+    }
+    public function getName($fullname)
     {
         $allusers = $this->getUserList();
         foreach ($allusers as $user) {
-            if ($user->getusername() === $fullname) {
+            if ($user->getName() === $fullname) {
                 return $user;
             }
         }
         return null;
     }
-    public function updateUser($username)
-    {
-        $user = $this->getusername($username);
-        $query = "update tbl_users set ";
-    }
-    public function deleteUser($username)
-    {
-    }
+
     public function searchUser($keyword)
     {
         $link = NULL;
         taoKetNoi($link);
         $data = array();
-        $result = chayTruyVanTraVeDL($link, "select * from tbl_users where user_fullname like '%" . $keyword . "%'");
+        $result = chayTruyVanTraVeDL($link, "select * from tbl_user where username like '%" . $keyword . "%'");
         while ($rows = mysqli_fetch_assoc($result)) {
-            $user = new User($rows['user_id'], $rows['user_fullname'], $rows['user_sdt'], $rows['user_pass'], $rows['user_address'], $rows['user_username'], $rows['decen_id']);
+            $user = new User($rows['id'], $rows['name'], $rows['phonenum'], $rows['password'], $rows['address'], $rows['username'], $rows['email']);
             array_push($data, $user);
         }
         giaiPhongBoNho($link, $result);

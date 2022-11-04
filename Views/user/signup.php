@@ -4,9 +4,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Furni3dots - Sign up</title>
-        <link rel="stylesheet" href="../../Public/CSS/header.css">
-        <link rel="stylesheet" href="../../Public/CSS/signup.css">
-        <link rel="stylesheet" href="../../Public/CSS/footer.css">
+        <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
+        <link rel="stylesheet" href="../do-an-web-php/Public/CSS/signup.css">
+        <link rel="stylesheet" href="../do-an-web-php/Public/CSS/footer.css">
         <!-- link bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
             integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -21,28 +21,30 @@
     <body>
         <!-- header -->
         <?php
-            include_once '../blocks/header.php'
+            include_once '../do-an-web-php/Views/blocks/header.php';
         ?>
         <!-- body -->
         <div class="container signup my-5">
             <h4 class="text-center mb-4">Sign up</h4>
             <form>
-                <input type="text" class="form-control" name="fullname" placeholder="Full name">
-                <input type="text" class="form-control" name="phonenumber" placeholder="Phone number">
+                <?php //include('../do-an-web-php/Models/errors.php'); ?>
+                <input type="text" class="form-control" name="name" placeholder="Full name">
+                <input type="text" class="form-control" name="phoneNum" placeholder="Phone number">
                 <input type="text" class="form-control" name="address" placeholder="Address">
                 <input type="text" class="form-control" name="username" placeholder="User name">
+                <input type="text" class="form-control" name="email" placeholder="E-mail">
                 <input type="password" class="form-control" name="password" placeholder="Password">
-                <input type="password" class="form-control" name="password" placeholder="Retype password">
+                <input type="password" class="form-control" name="confirmPass" placeholder="Confirm password">
                 <div class="d-flex mt-4 w-50 mx-auto">
                     <button class="btn btn-signup w-50" type="submit" name="submit">SIGN UP</button>
                     <button class="btn btn-signin w-50" type="submit" name="submit">SIGN IN</button>
                 </div>
-            </form>
+            </form> 
         </div>
 
         <!--Footer-->      
         <?php
-            include_once '../blocks/footer.php'
+            include_once '../do-an-web-php/Views/blocks/footer.php';
         ?>
 
         <!-- link bootstrap -->

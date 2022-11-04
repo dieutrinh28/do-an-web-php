@@ -50,8 +50,8 @@
             foreach ($users as $user) {
                 echo "
                 <tr>
-                <td><a href = 'index.php?userid=" . $user->getFullname() . "'>" . $user->getFullname() . "</a></td>
-                <td>" . $user->getSdt() . "</td>
+                <td><a href = 'index.php?userid=" . $user->getName() . "'>" . $user->getName() . "</a></td>
+                <td>" . $user->getPhoneNum() . "</td>
                 <td>" . $user->getPassword() . "</td>
                 <td>" . $user->getAddress() . "</td>
                 </tr>
