@@ -33,12 +33,12 @@ class UserController
                         }
                     case 1:
                         {
-                            array_push($errors,"This account has been exist");
+                            array_push($errors,"This account has been exist.");
                             include '../do-an-web-php/Views/users/signup.php';
                         }
                     case 3:
                         {
-                            array_push($errors,"Your information is not valid");
+                            array_push($errors,"Your information is not valid.");
                             include '../do-an-web-php/Views/users/signup.php';
                         }
                 }

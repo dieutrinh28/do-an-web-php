@@ -27,7 +27,7 @@ class UserController
                     include("../do-an-web-php/Views/home.php");
                 }
             } else {
-                array_push($errors,"wrong username or password");
+                array_push($errors,"Wrong username or password !");
                 include("../do-an-web-php/Views/users/signin.php");
             }
         }
