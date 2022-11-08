@@ -40,7 +40,7 @@
     //         $sum+=$v['soluong']*$v['gia'];
     //     return number_format($sum);
     // }
-    require_once ("../do-an-web-php/Models/CartModel.php");
+require_once ("../do-an-web-php/Models/CartModel.php");
 
 class CartController
 {
@@ -52,7 +52,7 @@ class CartController
     public function invoke()
     {
         if(!isset($_GET['add'])){
-             $cart= $this->model->getCartList();
+             $cart= $this->model->list_SP($_GET['key']);
             include ("../do-an-web-php/Views/cart.php");
         }else
         {
