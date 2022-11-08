@@ -41,31 +41,30 @@ class UserModel
         $valid =  validateEmail($email);
         $valid =  validateLenUp($username);
         $valid =  validateLenUp($password);
-        if ($valid) {
+
+        if ($valid==true) {
             if(existUsername($link,$username)>0)
             {
-                echo "this account has been exist".existUsername($link,$username);
-                echo "name: ".$username;
-                return false;
+                return 1;
             }
             else
             {
                 $query = "INSERT INTO tbl_user (username,password,email,name,phonenum,address) VALUES
-                        ('$username','$password','$email','$name','$phoneNum','$address' )";
+                        ('$username','".md5($password)."','$email','$name','$phoneNum','$address' )";
                 if (mysqli_query($link, $query))
                 {
-                    return true;
+                    return 0;
                 } 
                 else 
                 {
-                    return false;
+                    return 2;
                 }
                     
             }
         }
         else
         {
-            return false;
+            return 3;
         }
     }
 
@@ -74,8 +73,17 @@ class UserModel
         $allusers = $this->getUserList();
         $count = 0;
         foreach ($allusers as $user) {
-            if ($username == $user->getUsername() && $password == $user->getPassword())
+            if ($username == $user->getUsername() && md5($password) == $user->getPassword())
+            {
                 $count++;
+                $account = array(
+                    "name"=>$user->getName(),
+                    "username" => $user->getUsername(),
+                    "fullname" => $user->getAddress(),
+                    "email" => $user->getEmail(),
+                    "phoneNum"=>$user->getPhoneNum());
+                $_SESSION['account'] = $account;
+            }
         }
         if ($count != 0)
             return true;
@@ -91,6 +99,14 @@ class UserModel
             }
         }
         return null;
+    }
+    public function Logout($username)
+    {
+        if (isset($_SESSION['username'])) {
+            unset($_SESSION['username']);
+            return true;
+        } else
+            return false;
     }
 
     public function searchUser($keyword)

@@ -26,18 +26,30 @@
         <!-- body -->
         <div class="container signup my-5">
             <h4 class="text-center mb-4">Sign up</h4>
-            <form>
-                <?php //include('../do-an-web-php/Models/errors.php'); ?>
+            <form method = "POST">
+
+                <?php include('../do-an-web-php/Models/errors.php'); ?>
+
+                <p>Full name</p>
                 <input type="text" class="form-control" name="name" placeholder="Full name">
+                <p>Phone number</p>
                 <input type="text" class="form-control" name="phoneNum" placeholder="Phone number">
+               
+                <p>Address</p>
+
                 <input type="text" class="form-control" name="address" placeholder="Address">
+                <p>User name</p>
                 <input type="text" class="form-control" name="username" placeholder="User name">
+                <p>E-mail</p>
+
                 <input type="text" class="form-control" name="email" placeholder="E-mail">
+                <p>Password</p>
                 <input type="password" class="form-control" name="password" placeholder="Password">
+                <p>Confirm password</p>
                 <input type="password" class="form-control" name="confirmPass" placeholder="Confirm password">
                 <div class="d-flex mt-4 w-50 mx-auto">
-                    <button class="btn btn-signup w-50" type="submit" name="submit">SIGN UP</button>
-                    <button class="btn btn-signin w-50" type="submit" name="submit">SIGN IN</button>
+                    <button class="btn btn-signup w-50" type="button" name="signup">SIGN UP</button>
+                    <button class="btn btn-signin w-50" type="submit" name="signin">SIGN IN</button>
                 </div>
             </form> 
         </div>
@@ -46,10 +58,5 @@
         <?php
             include_once '../do-an-web-php/Views/blocks/footer.php';
         ?>
-
-        <!-- link bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     </body>
 </html>

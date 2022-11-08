@@ -54,19 +54,114 @@
                     </button>
                 </div>
             </div>
-            
-            <div class="product py-5">
-                <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('chair')">Chair</button>
-                    <button class="btn" onclick="filterSelection('sofa')">Sofa</button>
-                    <button class="btn" onclick="filterSelection('table')">Table</button>
-                    <button class="btn" onclick="filterSelection('clock')">Clock</button>
-                    <button class="btn" onclick="filterSelection('bed')">Bed</button>
-                </div>
-                <!-- Portfolio Gallery Grid -->
+
+            <div class="product-portfolio mt-5">
                 <div class="row">
-                    <!-- Chair -->
-                    <div class="col-3 card item chair">
+                    <div class="col-6">
+                        <div class="card">
+                            <a href="">
+                                <div class="item-img">
+                                    <img src="../Assets/img/chair-1-1.jpg" alt="">
+                                </div>
+                                <div class="card-body items-content">
+                                    <h5 class="card-title items-content__name">Chair</h5>
+                                    <h5 class="card-text items-content__price">20 Products</h5>
+                                </div>                          
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 splitting">
+                        <div class="row-12 card mb-4">
+                            <a href="">
+                                <div class="item-img">
+                                    <img src="../Assets/img/table-4-1.jpg" alt="">
+                                </div>
+                                <div class="card-body items-content">
+                                    <h5 class="card-title items-content__name">Table</h5>
+                                    <h5 class="card-text items-content__price">25 Products</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row-12 card">
+                            <a href="">
+                                <div class="item-img">
+                                    <img src="../Assets/img/sofa-3-1.jpg" alt="">
+                                </div>
+                                <div class="card-body items-content">
+                                    <h5 class="card-title items-content__name">Sofa</h5>
+                                    <h5 class="card-text items-content__price">25 Products</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 splitting">
+                        <div class="row-12 card mb-4">
+                            <a href="">
+                                <div class="item-img">
+                                    <img src="../Assets/img/bed-1-1.jpg" alt="">
+                                </div>
+                                <div class="card-body items-content">
+                                    <h5 class="card-title items-content__name">Bed</h5>
+                                    <h5 class="card-text items-content__price">25 Products</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row-12 card">
+                            <a href="">
+                                <div class="item-img">
+                                    <img src="../Assets/img/clock-2-1.jpg" alt="">
+                                </div>
+                                <div class="card-body items-content">
+                                    <h5 class="card-title items-content__name">Clock</h5>
+                                    <h5 class="card-text items-content__price">25 Products</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="utilities mt-5">
+                <div class="row">
+                    <div class="col-3 d-flex">
+                        <i class="fas fa-globe"></i>
+                        <div class="pl-4">
+                            <p>Free Shipping And Return</p>
+                            <span>Shop From Your Own Home</span>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex">
+                        <i class="fas fa-wallet"></i>
+                        <div class="pl-4">
+                            <p>Money Back Guarantee</p>
+                            <span>Shop From Your Own Home</span>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex">
+                        <i class="fas fa-headphones"></i>
+                        <div class="pl-4">
+                            <p>	Online Support 24/7</p>
+                            <span>Shop From Your Own Home</span>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex">
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <div class="pl-4">
+                            <p>Safe Payment</p>
+                            <span>Shop From Your Own Home</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner mt-5">
+                <img src="../Assets/banner.jpg" alt="">
+            </div>
+
+            <div class="best-seller mt-5">
+                <h4 class="text-center">BEST SELLER</h4>
+                <div class="row">
+                    <div class="col-3 card search-result__item">
                         <a href="">
                             <div class="item-img">
                                 <img src="../Assets/img/chair-1-1.jpg" alt="">
@@ -77,333 +172,21 @@
                             </div>                          
                         </a>
                     </div>
-                    <div class="col-3 card item chair">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item chair">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item chair">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item chair">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item chair">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-6-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item chair">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-7-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">MAST CHAIR</h5>
-                                <h5 class="card-text items-content__price">28 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item chair">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-8-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">AZURE</h5>
-                                <h5 class="caed-text items-content__price">42 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item chair">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-9-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NC4</h5>
-                                <h5 class="caed-text items-content__price">26 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- table -->
-                    <div class="col-3 card item table">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-1-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item table">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item table">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item table">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item table">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- sofa -->
-                    <div class="col-3 card item sofa">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-1-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item sofa">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item sofa">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item sofa">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item sofa">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item sofa">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-6-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- clock -->
-                    <div class="col-3 card item clock">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-1-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item clock">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item clock">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item clock">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item clock">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item clock">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-6-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item clock">
+                    <div class="col-3 card search-result__item">
                         <a href="">
                             <div class="item-img">
                                 <img src="../Assets/img/clock-7-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item clock">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-8-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- bed -->
-                    <div class="col-3 card item bed">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-1-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item bed">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">NAGI 2013</h5>
                                 <h5 class="card-text items-content__price">25 USD</h5>
                             </div>
                         </a>
                     </div>
-                    <div class="col-3 card item bed">
+                    <div class="col-3 card search-result__item">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/bed-3-1.jpg" alt="">
+                                <img src="../Assets/img/bed-5-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
@@ -411,10 +194,10 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3 card item bed">
+                    <div class="col-3 card search-result__item">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/bed-4-1.jpg" alt="">
+                                <img src="../Assets/img/chair-2-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">SAIL SOFA</h5>
@@ -422,509 +205,44 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3 card item bed">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item bed">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-6-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
                 </div>
+            </div>
 
+            <div class="sale mt-5">
                 <div class="row">
-  <div class="column chair">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column chair">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column chair">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column sofa">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column sofa">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column sofa">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column table">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="People" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column table">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="People" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column table">
-    <div class="content">
-      <img src="../Assets/img/chair-1-1.jpg" alt="People" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-            </div>
-            
-
-            
-
-<!--
-
-            <div class="chair mt-5">
-                <h4 class="">CHAIR</h4>
-                <div class="row items">
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-1-1.jpg" alt="">
+                    <div class="col-6">
+                        <div class="card">
+                                <a href="">
+                                    <div class="item-img">
+                                        <img src="../Assets/img/sofa-3-1.jpg" alt="">
+                                    </div>
+                                    <div class="card-body items-content">
+                                        <h2>Mind-Blowing Discounts</h2>
+                                        <h1><span>50%</span> OFF</h1>
+                                        <p>Shop From Your Own Home</p>
+                                        <button>Check Offers</button>
+                                    </div>                          
+                                </a>
                             </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-6-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-7-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">MAST CHAIR</h5>
-                                <h5 class="card-text items-content__price">28 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-8-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">AZURE</h5>
-                                <h5 class="caed-text items-content__price">42 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/chair-9-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NC4</h5>
-                                <h5 class="caed-text items-content__price">26 USD</h5>
-                            </div>
-                        </a>
+                        </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <a href="">
+                                <div class="item-img">
+                                    <img src="../Assets/img/table-1-1.jpg" alt="">
+                                </div>
+                                <div class="card-body items-content">
+                                    <h2>More Than 250 Products From</h2>
+                                    <h1><span>$3.99</span></span> OFF</h3>
+                                    <p>Shop From Your Own Home</p>
+                                    <button>Shop now</button>
+                                </div>                          
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="sofa mt-5">
-                <h4 class="">SOFA</h4>
-                <div class="row items">
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-1-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/sofa-6-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="table mt-5">
-                <h4 class="">TABLE</h4>
-                <div class="row items">
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-1-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/table-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="clock mt-5">
-                <h4 class="">CLOCK</h4>
-                <div class="row items">
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-1-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-6-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-7-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/clock-8-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="bed mt-5">
-                <h4 class="">BED</h4>
-                <div class="row items">
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-1-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CIELO</h5>
-                                <h5 class="card-text items-content__price">20 USD</h5>
-                            </div>                          
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-2-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">NAGI 2013</h5>
-                                <h5 class="card-text items-content__price">25 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
-                                <h5 class="card-text items-content__price">23 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-4-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">SAIL SOFA</h5>
-                                <h5 class="card-text items-content__price">32 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-5-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">HARU</h5>
-                                <h5 class="card-text items-content__price">35 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 card item">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../Assets/img/bed-6-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h5 class="card-title items-content__name">CLOUD</h5>
-                                <h5 class="card-text items-content__price">21 USD</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
--->
-            <div class="banner">
 
-            
-            </div>
         </div>
 
         <!--Footer-->      

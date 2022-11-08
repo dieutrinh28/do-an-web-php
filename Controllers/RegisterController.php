@@ -10,7 +10,9 @@ class UserController
 
     public function invoke()
     {
-        if (
+    
+        $errors = array();
+         if (
             !(
                 isset($_GET['username']) &&
                 isset($_GET['password']) &&
@@ -20,25 +22,29 @@ class UserController
                 isset($_GET['address'])
             )
         ) {
-            include '../do-an-web-php/Views/user/signup.php';
+            //array_push($errors,"Please fill out your information!");
+            include '../do-an-web-php/Views/users/signup.php';
         } else {
-            if (
-                $this->model->register(
-                    $_GET['username'],
-                    $_GET['password'],
-                    $_GET['email'],
-                    $_GET['phoneNum'],
-                    $_GET['address'],
-                    $_GET['name'],
-                    $_GET['confirmPass']
-                ) == true
-            ) {
-                include '../do-an-web-php/Views/login.php';
-            } else{
-                include '../do-an-web-php/Views/user/signup.php';
+            switch($this->model->register($_GET['username'],$_GET['password'],$_GET['email'],$_GET['phoneNum'],$_GET['address'],$_GET['name'],$_GET['confirmPass        ']))
+                {
+                    case 0: 
+                        {
+                            include '../do-an-web-php/Views/users/signin.php';
+                        }
+                    case 1:
+                        {
+                            array_push($errors,"This account has been exist");
+                            include '../do-an-web-php/Views/users/signup.php';
+                        }
+                    case 3:
+                        {
+                            array_push($errors,"Your information is not valid");
+                            include '../do-an-web-php/Views/users/signup.php';
+                        }
+                }
             }
 
 
-        }
+        
     }
 }

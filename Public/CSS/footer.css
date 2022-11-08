@@ -11,7 +11,6 @@
     padding: 0 !important;
 }
 .my-footer{
-    margin-top: 30px;
     padding: 10px 66px;
     background: var(--bg-grey);
     color: #fff;
@@ -28,31 +27,18 @@
     font-size: 20px;
     color: #fff;
 }
-.my-footer .support-text a{
+.my-footer a{
     color: #fff;
 }
-.my-footer .support-text:hover a, i{
+.my-footer .support-text:hover a, .my-footer .support-text:hover i{
     color: var(--bg-green);
     text-decoration: none;
 }
-.my-footer .support-text:hover i{
+.my-footer .infomaion a{
+    display: block;
+    color: #fff;
+}
+.my-footer .infomaion a:hover{
     color: var(--bg-green);
-    cursor: pointer;
-}
-.my-footer .footer-btn-signin{
-    background: var(--bg-green);
-    color: #fff;
-}
-.my-footer .footer-btn-signin:hover{
-    background-color: var(--bg-dark-green);
-    color: #fff;
-}
-.my-footer .footer-btn-signup{
-    border: 1px solid var(--bg-green);
-    color: #fff;
-}
-.my-footer .footer-btn-signup:hover{
-    background-color: var(--bg-dark-green);
-    color: #fff;
-    border: none;
+    text-decoration: none;
 }
