@@ -12,6 +12,10 @@ require_once("Controllers/RegisterController.php");
 //     $controller = new UserController();
 //     $controller->invoke();
 // }
+<<<<<<< HEAD
 //require_once ("Controllers/CartController.php");
+=======
+//require_once ("Controllers/LoginController.php");
+>>>>>>> e03f3543cd7171577664ee048dac16579c8592a6
 $controller = new UserController();
 $controller->invoke();
