@@ -1,6 +1,6 @@
 <?php
-require_once("./Classes/Category.php");
-require_once("./Modules/db_module.php");
+require_once("../do-an-web-php/Classes/Category.php");
+require_once("../do-an-web-php/Modules/db_module.php");
 
 class CategoryModel
 {

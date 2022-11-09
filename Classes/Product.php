@@ -29,7 +29,7 @@ class Product
     {
         return $this->image;
     }
-    public function getIdLoaiSP()
+    public function getCategory()
     {
         return $this->idloaisp;
     }

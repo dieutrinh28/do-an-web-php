@@ -21,7 +21,7 @@
     <body>
         <!-- header -->
         <?php
-            include_once './blocks/header.php'
+            include_once '../do-an-web-php/Views/blocks/header.php'
         ?>
         
         <!-- body -->
@@ -458,7 +458,7 @@
         </div>
         <!--Footer-->      
         <?php
-            include_once './blocks/footer.php'
+            include_once '../do-an-web-php/Views/blocks/footer.php'
         ?>
 
     <!-- link bootstrap -->

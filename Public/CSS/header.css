@@ -13,20 +13,12 @@
     padding: 10px 50px !important;
     background-color: var(--bg-grey);
 }
-@media only screen and (min-width: 576px){
-    .navbar img{
-        width: 40%;
-    }
+.navbar-logo{
+    width: 25%;
+    overflow: hidden;
 }
-@media only screen and (min-width: 992px){
-    .navbar img{
-        width: 40%;
-    }
-}
-@media only screen and (min-width: 1200px){
-    .navbar img{
-        width: 50%;
-    }
+.navbar img{
+    width: 45%;
 }
 .navbar img:hover{
     cursor: pointer;
@@ -49,6 +41,7 @@
 }
 .navbar a:hover{
     color: var(--bg-green);
+    text-decoration: none;
 }
 .navbar .navbar-nav{
     margin: 0 auto;
@@ -82,4 +75,17 @@
 .navbar .nav-icon-search:hover{
     color: var(--bg-green);
     cursor: pointer;
+}
+.navbar .avt{
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.navbar .avt img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }

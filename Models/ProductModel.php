@@ -1,6 +1,7 @@
 <?php
-require_once("./Classes/Product.php");
-require_once("./Modules/db_module.php");
+require_once("../do-an-web-php/Classes/Product.php");
+require_once("../do-an-web-php/Modules/db_module.php");
+session_start();
 
 class ProductModel
 {
@@ -106,4 +107,7 @@ class ProductModel
         giaiPhongBoNho($link, $result);
         return $data;
     }
+  
+    
+
 }

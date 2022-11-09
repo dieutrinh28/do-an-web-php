@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furni3dots - Home</title>
+    <title>Furni3dots - Product Detail</title>
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/productdetail.css">
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/footer.css">
@@ -39,7 +39,7 @@
             <div class="emojis">
                 <a href=""><i class="fas fa-angle-left"></i></a>
                 <?php
-                
+
                 ?>
 
                 <a href=""><i class="fas fa-angle-right"></i></i></a>
@@ -48,6 +48,7 @@
                 <?php
                 echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
                 echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
+                echo "<button class='btn btn-primary btn_addToCart' type='submit' name='addtocart'>ADD TO CART</button>"
                 ?>
             </div>
         </div>
