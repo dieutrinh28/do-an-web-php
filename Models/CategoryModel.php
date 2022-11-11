@@ -8,7 +8,7 @@ class CategoryModel
     {
         $link = null;
         taoKetNoi($link);
-        $result = chayTruyVanTraVeDL($link, "select * from tbl_categories");
+        $result = chayTruyVanTraVeDL($link, "SELECT * FROM tbl_categories");
         $data = array();
         while ($rows = mysqli_fetch_assoc($result)) {
             $category = new Category($rows["cat_id"], $rows["cat_name"]);

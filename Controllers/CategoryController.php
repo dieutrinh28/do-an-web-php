@@ -13,8 +13,7 @@ class CategoryController
     public function invoke()
     {
         if (!isset($_GET["keyword"])) {
-            $categories = $this->model->getCategoryList();
-            include "Views/";
+            $categories = $this->model->getCategoryList();          
         } else {
         }
     }

@@ -18,7 +18,7 @@
 
 <body>
     <?php
-    include_once '../do-an-web-php/Views/blocks/header.php';
+    include_once '../../Views/blocks/header-admin.php';
     ?>
 
     <div class="container-fluid px-5">
@@ -42,7 +42,7 @@
                         <h1>IMAGE</h1>
                     </th>
                     <th>
-                        <h1>CAT_ID</h1>
+                        <h1>CAT ID</h1>
                     </th>
                     <th>
                         <h1>ACTION</h1>
@@ -60,6 +60,7 @@
                     <td><img width='80' src='../do-an-web-php/Assets/img/" . $product->getImage() . "'></td>    
                     <td>" . $product->getCategory() . "</td>     
                     <td><a href='index.php?productid=" . $product->getId() . "'>Edit</a> <a href=''>Delete</a></td>
+                    
                     </tr>"
                 ?>
 

@@ -3,4 +3,4 @@ define("HOST", "localhost");
 define("DB", "db_furnithreedots");
 define("USER", "root");
 define("PASSWORD", "");
-define("URL","http://localhost/do-an-web-php/");
+define("URL", "http://localhost:89/do-an-web/do-an-web-php");

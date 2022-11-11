@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furni3dots - Edit Product</title>
+    <title>Furni3dots - Create Product</title>
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/add-product-ad.css">
 
@@ -18,22 +18,17 @@
 
 <body>
     <?php
-    include_once '../do-an-web-php/Views/blocks/header.php'
+    include_once '../do-an-web-php/Views/blocks/header-admin.php';
     ?>
 
     <div class="container-fluid px-5 add-product mt-5">
-        <form>
-            <h2 class="mb-3">EDIT PRODUCT</h2>
+        <form method="POST">
+            <h2 class="mb-3">CREATE PRODUCT</h2>
             <fieldset>
                 <section>
                     <div class="input-block">
                         <label for="name">Name</label>
-                        <input class="input" type="text" name="name" autocomplete="off" placeholder="Enter your Product name">
-                    </div>
-
-                    <div class="input-block">
-                        <label for="description">Description</label>
-                        <input class="input" type="text" name="size" autocomplete="off" placeholder="Description">
+                        <input class="input" type="text" name="name" autocomplete="off" placeholder="Enter your product name">
                     </div>
                     <div class="input-block">
                         <label for="price">Price</label>
@@ -41,12 +36,12 @@
                     </div>
                     <div class="input-block">
                         <label for="strap">Categories</label>
-                        <select class="input" name="strap">
-                            <option value="Leather">Bed</option>
-                            <option value="Metal">Chair</option>
-                            <option value="Metal">Clock</option>
-                            <option value="Metal">Sofa</option>
-                            <option value="Metal">Table</option>
+                        <select class="input" name="category">
+                            <option value="1">Bed</option>
+                            <option value="2">Chair</option>
+                            <option value="3">Clock</option>
+                            <option value="4">Sofa</option>
+                            <option value="5">Table</option>
                         </select>
 
                     </div>
@@ -80,12 +75,13 @@
             </fieldset>
 
             <button type="submit" name="submit">
-                <p class="submit">SAVED</p>
+                <p class="submit">SUBMIT</p>
             </button>
 
         </form>
+
     </div>
-    <script src="../do-an-web-php/Public/JS/addproduct.js"></script>
+    <script src="../../Public/JS/addproduct.js"></script>
 </body>
 
 </html>

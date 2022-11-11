@@ -27,24 +27,45 @@ class ProductController
             include "../do-an-web-php/Views/admin/product.php";
         } else {
             $product = $this->model->getProduct($_GET["productid"]);
-            include "../do-an-web-php/Views/admin/edit-product.php";
+            include "../do-an-web-php/Views/admin/update-product.php";
         }
     }
-    public function createProduct()
+    public function create()
     {
-        if (
-            !(isset($_GET['name']) &&
-                isset($_GET['description']) &&
-                isset($_GET['price']) &&
-                isset($_GET['category']) &&
-                isset($_GET['image'])
-            )
-        ) {
-            echo "error";
-            include '../do-an-web-php/Views/admin/add-product.php';
+        if (isset($_POST['submit'])) {
+            $result = $this->model->createProduct($_POST['name'], $_POST['description'], $_POST['price'], $_POST['image'], $_POST['category']);
+            if ($result) {
+                header("Location:" . URL . "/Views/admin/product.php");
+            } else {
+                header("Location:" . URL . "/Views/home.php");
+            }
         } else {
-            echo "this is success";
-            $this->model->createProduct($_GET['name'], $_GET['description'], $_GET['price'], $_GET['category'], $_GET['image']);
+            include '../do-an-web-php/Views/admin/create-product.php';
+        }
+    }
+    public function update($id)
+    {
+        $data['getProductById'] = $this->model->getProduct($id);
+        if (isset($_POST['submit'])) {
+            $result = $this->model->updateProduct($id, $_POST['name'], $_POST['description'], $_POST['price'], $_POST['image'], $_POST['category']);
+            if ($result) {
+                header("Location:" . URL . "/Views/admin/product.php");
+            } else {
+                header("Location:" . URL . "/Views/home.php");
+            }
+        } else {
+            include '../do-an-web-php/Views/admin/update-product.php';
+        }
+    }
+    public function delete($id)
+    {
+        $result = $this->model->deleteProduct($id);
+        if ($result) {
+            echo "<div>success</div>";
+            header("Location:" . URL . "/Views/admin/product.php");
+        } else {
+            echo "<div>error</div>";
+            header("Location:" . URL . "/Views/home.php");
         }
     }
 }

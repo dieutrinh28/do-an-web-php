@@ -18,11 +18,9 @@ class UserController
             if ($this->model->login($_GET['username'], $_GET['password']) == true) {
                 if($_GET['username']=='admin')
                 {
-
                     include("../do-an-web-php/Views/admin/customers.php");
                 }else
                 {
-
                     $_SESSION['username'] = $_GET['username'];
                     include("../do-an-web-php/Views/home.php");
                 }

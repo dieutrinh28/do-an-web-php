@@ -48,7 +48,7 @@
                 <?php
                 echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
                 echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
-                echo "<button class='btn btn-primary btn_addToCart' type='submit' name='addtocart'>ADD TO CART</button>"
+                echo "<button class='btn btn-primary btn_addToCart' type='submit' name='action' value='Thêm vào giỏ'>ADD TO CART</button>"
                 ?>
             </div>
         </div>
