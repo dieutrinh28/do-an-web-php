@@ -12,18 +12,21 @@ class UserController
     public function invoke()
     {
         $errors = array();
-        if (!(isset($_GET['username']) && isset($_GET['password']))){ 
+        if (!(isset($_POST['username']) && isset($_POST['password']))){ 
             include("../do-an-web-php/Views/users/signin.php");
         } else {
-            if ($this->model->login($_GET['username'], $_GET['password']) == true) {
-                if($_GET['username']=='admin')
+            if ($this->model->login($_POST['username'], $_POST['password']) == true) {
+                if($_POST['username']=='admin')
                 {
-
+                    
+                    $users=  $this->model->getUserList();
                     include("../do-an-web-php/Views/admin/customers.php");
+                    
+                    //header("Location: ./Views/admin/customers.php");
                 }else
                 {
 
-                    $_SESSION['username'] = $_GET['username'];
+                    $_SESSION['username'] = $_POST['username'];
                     include("../do-an-web-php/Views/home.php");
                 }
             } else {

@@ -27,7 +27,8 @@
     ?>
     <div class="container login mt-5">
         <h4 class="text-center">Login</h4>
-        <form class="w-50 mx-auto" method="get" action="../do-an-web-php/index.php">
+        
+        <form class="w-50 mx-auto" method="post" >
             <div class="form-group">
                 <?php include('../do-an-web-php/Models/errors.php'); ?>
                 <p class="form-text">User name</p>

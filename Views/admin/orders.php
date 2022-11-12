@@ -4,8 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furni3dots - Orders</title>
-    <link rel="stylesheet" href="../../Public/CSS/header.css">
-    <link rel="stylesheet" href="../../Public/CSS/customers-ad.css">
+    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
+    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/customers-ad.css">
 
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
 </head>
 <body>
     <?php
-        include_once 'header.php'
+        include_once 'header.php';
     ?>
 
     <div class="container-fluid px-5 w-50">
@@ -29,32 +29,47 @@
         <table class="mb-5 productlist">
             <thead>
                 <tr>
-                    <th>
-                        <h1>ID</h1>
-                    </th>
+                    
                     <th>
                         <h1>TIME</h1>
                     </th>
                     <th>
-                        <h1>ID USER</h1>
+                        <h1>USER ID</h1>
                     </th>
                     <th>
-                        <h1>ACTION</h1>
+                        <h1>ACTION</h1></h1>
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td>2022-10-08 17:19:46</td>
-                    <td>6</td>
-                    <td><a href="">See more</a></td>
                 </tr>
+        <?php   
+        // require_once("./do-an-web-php/Controllers/UserController.php");
+        // $controller = new UserController();
+        // $controller->invoke();
+
+
+        if (empty($orders)) {
+            echo "ko tim thay ket qua";
+        } else {
+            foreach ($orders as $order) {
+        ?>
+           
                 <tr>
-                    <td>1</td>
-                    <td>2022-10-08 17:19:46</td>
-                    <td>6</td>
-                    <td><a href="">See more</a></td>
+                    <td><?php echo $order->getTime() ?></td>    
+                    <td><?php echo $order->getUser() ?></td>           
+                    <td>  <form method="get">
+                        <input type="submit" name ="detail" value="More detail" />
+
+                    </form>
+                    </td>             
+                </tr>
+                
+        <?php  
+            }
+        }
+        ?>
                 </tr>
             </tbody>
         </table>

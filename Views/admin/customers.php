@@ -46,7 +46,10 @@
             </thead>
             <tbody>
             </tr>
-        <?php
+        <?php   
+        // require_once("./do-an-web-php/Controllers/UserController.php");
+        // $controller = new UserController();
+        // $controller->invoke();
 
 
         if (empty($users)) {

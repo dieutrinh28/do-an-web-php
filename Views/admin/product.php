@@ -67,6 +67,107 @@
                     <td>1</td>
                     <td><a href="">Edit</a> <a href="">Delete</a></td>
                 </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Ghế</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim dolorum adipisci illum magnam debitis ad laboriosam doloribus recusandae modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci a placeat nostrum veniam ullam autem praesentium distinctio eius culpa.</td>
+                    <td>$20</td>
+                    <td><img src="../../Assets/img/chair-1-1.jpg" width="80"></td>
+                    <td>1</td>
+                    <td><a href="">Edit</a> <a href="">Delete</a></td>
+                </tr>
             </tbody>
         </table>
         <nav class="mt-5 mb-4" aria-label="Page navigation sample" id="pagination_link">
