@@ -23,14 +23,14 @@
 <body>
     <!-- header -->
     <?php
-    include_once '../blocks/header.php';
+    include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header.php");
     ?>
     <!-- body -->
     <div class="body global">
         <div class="left">
             <?php
             echo "<div class='item-img'>
-                     <img src='../do-an-web-php/Assets/img/" . $product->getImage() . "'>
+                     <img src='../../Assets/img/" . $product->getImage() . "'>
                 </div>"
             ?>
 
@@ -38,10 +38,6 @@
         <div class="right">
             <div class="emojis">
                 <a href=""><i class="fas fa-angle-left"></i></a>
-                <?php
-
-                ?>
-
                 <a href=""><i class="fas fa-angle-right"></i></i></a>
             </div>
             <div id='content_border'>
@@ -56,7 +52,7 @@
 
     <!--Footer-->
     <?php
-    include_once '../blocks/footer.php';
+    include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/footer.php");
     ?>
     <!-- link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

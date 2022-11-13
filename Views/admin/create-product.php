@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furni3dots - Create Product</title>
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/add-product-ad.css">
+    <link rel="stylesheet" href="../../Public/CSS/add-product-ad.css">
 
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -18,8 +18,10 @@
 
 <body>
     <?php
-    include_once '../blocks/header-admin.php';
+    include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header-admin.php");
     ?>
+
+
 
     <div class="container-fluid px-5 add-product mt-5">
         <form method="POST">

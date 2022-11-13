@@ -26,7 +26,7 @@
                         <a class="nav-link" href="../admin/product.php">PRODUCT<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../admin/create-product.php">NEW PRODUCT</a>
+                        <a class="nav-link" href="../admin/create.php">NEW PRODUCT</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="../admin/customers.php">CUSTOMER</a>

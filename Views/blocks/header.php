@@ -26,7 +26,7 @@
                         <a class="nav-link" href="../users/home.php">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../users/productlist.php">Product</a>
+                        <a class="nav-link" href="../users/product.php">Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../users/cart.php">Cart</a>
