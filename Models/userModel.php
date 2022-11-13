@@ -102,11 +102,11 @@ class UserModel
     }
     public function Logout($username)
     {
-        // if (isset($_SESSION['username'])) {
-        //     unset($_SESSION['username']);
-        //     return true;
-        // } else
-        //     return false;
+        if (isset($_SESSION['username'])) {
+            unset($_SESSION['username']);
+            return true;
+        } else
+            return false;
     }
 
     public function searchUser($keyword)

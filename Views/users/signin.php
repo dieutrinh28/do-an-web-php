@@ -44,13 +44,14 @@
                 <p>Remember me</p>
             </div>
             <div class="d-flex mt-4">
-                <button class="btn btn-signin w-50" type="submit" name="submitLogin" value="smLogin" >SIGN IN</button>
-                <a href="../do-an-web-php/Views/users/signup.php">signup</a>
+                <button class="btn btn-signin w-50" type="submit" name="submitLogin"  >SIGN IN</button>
+                
                 
             </div>
-           
+            
             
         </form>
+        <button class="btn btn-signup w-50" type="submit" name="submitLogout"  >SIGN UP</button>
         
     </div>
     <?php
