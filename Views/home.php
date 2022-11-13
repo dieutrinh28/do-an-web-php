@@ -20,7 +20,10 @@
     </head>
     <body>
         <!-- header -->
+
         <?php
+            // var_dump($_SERVER['REQUEST_URL']);
+            // exit;
             include_once './blocks/header.php';
         ?>
         <!-- body -->

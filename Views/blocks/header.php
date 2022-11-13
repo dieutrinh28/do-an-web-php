@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Allcarta - Login</title>
         <link rel="stylesheet" href="../../Public/CSS/header.css">
+        <link rel="stylesheet" href="../../Public/CSS/signin.css">
+        <link rel="stylesheet" href="../../Public/CSS/signup.css">
+
         <!-- link bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
             integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -22,14 +25,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../home.php">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Product</a>
+                            <a class="nav-link" href="./productpage.php">Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cart</a>
+                            <a class="nav-link" href="./cart.php">Cart</a>
                         </li>
+                        </li class= "nav-item"> <a class = "nav-link" href="./users/signin.php">Log in</a>
                     </ul>
                     <form class="form-inline my-lg-0">
                         <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">
