@@ -18,7 +18,7 @@
 
 <body>
     <?php
-    include_once '../do-an-web-php/Views/blocks/header-admin.php';
+    include_once '../blocks/header-admin.php';
     ?>
 
     <div class="container-fluid px-5 add-product mt-5">

@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furni3dots - Home</title>
-    <link rel="stylesheet" href="../Public/CSS/header.css">
-    <link rel="stylesheet" href="../Public/CSS/home.css">
-    <link rel="stylesheet" href="../Public/CSS/footer.css">
+    <link rel="stylesheet" href="../../Public/CSS/header.css">
+    <link rel="stylesheet" href="../../Public/CSS/home.css">
+    <link rel="stylesheet" href="../../Public/CSS/footer.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- link owl carousel -->
@@ -25,7 +25,7 @@
     <?php
     // var_dump($_SERVER['REQUEST_URL']);
     // exit;
-    include_once './blocks/header.php';
+    include_once '../blocks/header.php';
     ?>
     <!-- body -->
     <div class="container-fluid homepage px-5">
@@ -33,19 +33,19 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../Assets/img/chair-3-1.jpg" class="d-block w-100" alt="...">
+                        <img src="../../Assets/img/chair-3-1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../Assets/img/sofa-2-1.jpg" class="d-block w-100" alt="...">
+                        <img src="../../Assets/img/sofa-2-1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../Assets/img/bed-1-2.jpg" class="d-block w-100" alt="...">
+                        <img src="../../Assets/img/bed-1-2.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../Assets/img/table-5-1.jpg" class="d-block w-100" alt="...">
+                        <img src="../../Assets/img/table-5-1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../Assets/img/clock-8-1.jpg" class="d-block w-100" alt="...">
+                        <img src="../../Assets/img/clock-8-1.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
@@ -65,7 +65,7 @@
                     <div class="card">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/chair-1-1.jpg" alt="">
+                                <img src="../../Assets/img/chair-1-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">Chair</h5>
@@ -78,7 +78,7 @@
                     <div class="row-12 card mb-4">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/table-4-1.jpg" alt="">
+                                <img src="../../Assets/img/table-4-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">Table</h5>
@@ -89,7 +89,7 @@
                     <div class="row-12 card">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/sofa-3-1.jpg" alt="">
+                                <img src="../../Assets/img/sofa-3-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">Sofa</h5>
@@ -102,7 +102,7 @@
                     <div class="row-12 card mb-4">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/bed-1-1.jpg" alt="">
+                                <img src="../../Assets/img/bed-1-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">Bed</h5>
@@ -113,7 +113,7 @@
                     <div class="row-12 card">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/clock-2-1.jpg" alt="">
+                                <img src="../../Assets/img/clock-2-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">Clock</h5>
@@ -159,7 +159,7 @@
         </div>
 
         <div class="banner mt-5">
-            <img src="../Assets/banner.jpg" alt="">
+            <img src="../../Assets/banner.jpg" alt="">
         </div>
 
         <div class="best-seller mt-5">
@@ -168,7 +168,7 @@
                 <div class="col-3 card search-result__item">
                     <a href="">
                         <div class="item-img">
-                            <img src="../Assets/img/chair-1-1.jpg" alt="">
+                            <img src="../../Assets/img/chair-1-1.jpg" alt="">
                         </div>
                         <div class="card-body items-content">
                             <h5 class="card-title items-content__name">CIELO</h5>
@@ -179,7 +179,7 @@
                 <div class="col-3 card search-result__item">
                     <a href="">
                         <div class="item-img">
-                            <img src="../Assets/img/clock-7-1.jpg" alt="">
+                            <img src="../../Assets/img/clock-7-1.jpg" alt="">
                         </div>
                         <div class="card-body items-content">
                             <h5 class="card-title items-content__name">NAGI 2013</h5>
@@ -190,7 +190,7 @@
                 <div class="col-3 card search-result__item">
                     <a href="">
                         <div class="item-img">
-                            <img src="../Assets/img/bed-5-1.jpg" alt="">
+                            <img src="../../Assets/img/bed-5-1.jpg" alt="">
                         </div>
                         <div class="card-body items-content">
                             <h5 class="card-title items-content__name">CRAFT CHAIR</h5>
@@ -201,7 +201,7 @@
                 <div class="col-3 card search-result__item">
                     <a href="">
                         <div class="item-img">
-                            <img src="../Assets/img/chair-2-1.jpg" alt="">
+                            <img src="../../Assets/img/chair-2-1.jpg" alt="">
                         </div>
                         <div class="card-body items-content">
                             <h5 class="card-title items-content__name">SAIL SOFA</h5>
@@ -218,7 +218,7 @@
                     <div class="card">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/sofa-3-1.jpg" alt="">
+                                <img src="../../Assets/img/sofa-3-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h2>Mind-Blowing Discounts</h2>
@@ -233,7 +233,7 @@
                     <div class="card">
                         <a href="">
                             <div class="item-img">
-                                <img src="../Assets/img/table-1-1.jpg" alt="">
+                                <img src="../../Assets/img/table-1-1.jpg" alt="">
                             </div>
                             <div class="card-body items-content">
                                 <h2>More Than 250 Products From</h2>
@@ -251,7 +251,7 @@
 
     <!--Footer-->
     <?php
-    include_once './blocks/footer.php';
+    include_once '../blocks/footer.php';
     ?>
 
     <!-- link bootstrap -->

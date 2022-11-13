@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,16 @@
     <link rel="stylesheet" href="../../Public/CSS/product-ad.css">
 
     <!-- link bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- link icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <!-- link font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <?php
-        include_once '../do-an-web-php/Views/blocks/header.php'
+    include_once '../blocks/header-admin.php';
     ?>
 
     <div class="container-fluid px-5 w-75">
@@ -25,7 +26,7 @@
         <table class="mb-5 productlist">
             <thead>
                 <tr>
-                   
+
                     <th>
                         <h1>ID ORDER</h1>
                     </th>
@@ -45,27 +46,27 @@
             </thead>
             <tbody>
                 <?php
-            if (empty($detail)) {
-            echo "ko tim thay ket qua";
-        } else {
-            foreach ($users as $user) {
-                echo "
+                if (empty($detail)) {
+                    echo "ko tim thay ket qua";
+                } else {
+                    foreach ($users as $user) {
+                        echo "
                 <tr>
                 <td><a href = 'index.php?userid=" . $user->getName() . "'>" . $user->getName() . "</a></td>
                 <td>" . $user->getPhoneNum() . "</td>
-                <td>".$user->getAddress()."</td>
+                <td>" . $user->getAddress() . "</td>
                 <td>" . $user->getEmail() . "</td>
                 </tr>
                 ";
-            }
-        }
-        ?>
+                    }
+                }
+                ?>
             </tbody>
         </table>
     </div>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 <?php
-require_once "../do-an-web-php/Modules/config.php";
+require_once "config.php";
 
 function taoKetNoi(&$link)
 {

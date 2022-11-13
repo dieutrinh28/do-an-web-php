@@ -18,12 +18,12 @@
 
 <body>
     <?php
-    include_once '../do-an-web-php/Views/blocks/header-admin.php';
+    include_once '../blocks/header-admin.php';
     ?>
 
     <div class="container-fluid px-5 add-product mt-5">
 
-        <form action="<?php echo URL ?>/product/editProduct/<?php echo $value['productId'] ?>" method="POST">
+        <form action="" method="POST">
             <h2 class="mb-3">UPDATE PRODUCT</h2>
             <fieldset>
                 <section>

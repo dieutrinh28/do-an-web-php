@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,16 @@
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/customers-ad.css">
 
     <!-- link bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- link icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <!-- link font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <?php
-        include_once 'header.php'
+    include_once '../blocks/header-admin.php';
     ?>
 
     <div class="container-fluid px-5 w-50">
@@ -29,7 +30,7 @@
         <table class="mb-5 productlist">
             <thead>
                 <tr>
-                    
+
                     <th>
                         <h1>TIME</h1>
                     </th>
@@ -37,46 +38,48 @@
                         <h1>USER ID</h1>
                     </th>
                     <th>
-                        <h1>ACTION</h1></h1>
+                        <h1>ACTION</h1>
+                        </h1>
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                 </tr>
-        <?php   
-        // require_once("./do-an-web-php/Controllers/UserController.php");
-        // $controller = new UserController();
-        // $controller->invoke();
+                <?php
+                // require_once("./do-an-web-php/Controllers/UserController.php");
+                // $controller = new UserController();
+                // $controller->invoke();
 
 
-        if (empty($orders)) {
-            echo "ko tim thay ket qua";
-        } else {
-            foreach ($orders as $order) {
-        ?>
-           
-                <tr>
-                    <td><?php echo $order->getTime() ?></td>    
-                    <td><?php echo $order->getUser() ?></td>           
-                    <td>  <form method="get">
-                        <input type="submit" name ="detail" value="More detail" />
+                if (empty($orders)) {
+                    echo "ko tim thay ket qua";
+                } else {
+                    foreach ($orders as $order) {
+                ?>
 
-                    </form>
-                    </td>             
-                </tr>
-                
-        <?php  
-            }
-        }
-        ?>
+                        <tr>
+                            <td><?php echo $order->getTime() ?></td>
+                            <td><?php echo $order->getUser() ?></td>
+                            <td>
+                                <form method="get">
+                                    <input type="submit" name="detail" value="More detail" />
+
+                                </form>
+                            </td>
+                        </tr>
+
+                <?php
+                    }
+                }
+                ?>
                 </tr>
             </tbody>
         </table>
     </div>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
 </body>
 

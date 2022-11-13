@@ -23,7 +23,7 @@
 <body>
     <!-- header -->
     <?php
-    include_once("../do-an-web-php/Views/blocks/header.php");
+    include_once '../blocks/header.php';
     ?>
     <!-- body -->
     <div class="container-fluid homepage px-5">
@@ -31,10 +31,11 @@
         <div class='product py-5'>
             <div class='row'>
                 <?php
-                include_once("./Controllers/ProductController.php");
+                include_once("../../Controllers/ProductController.php");
                 $controller = new ProductController();
                 $controller->invoke();
-
+                ?>
+                <?php
                 foreach ($products as $product)
                     echo "<div class='col-3'>
                             <div class =' card item chair'>
@@ -55,7 +56,7 @@
 
     <!--Footer-->
     <?php
-    require_once("../do-an-web-php/Views/blocks/footer.php");
+    include_once '../blocks/footer.php';
     ?>
     <!-- link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

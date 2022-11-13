@@ -18,7 +18,7 @@
 
 <body>
     <?php
-    include_once '../do-an-web-php/Views/blocks/header-admin.php';
+    include_once '../blocks/header-admin.php';
     ?>
 
     <div class="container-fluid px-5">
@@ -50,6 +50,13 @@
                 </tr>
             </thead>
             <tbody>
+
+                <?php
+                // include_once("../../Controllers/ProductController.php");
+                // $controller = new ProductController();
+                // $controller->invokeAdmin();
+                // ?>
+
                 <?php
                 foreach ($products as $product)
                     echo "  <tr>

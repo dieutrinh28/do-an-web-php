@@ -1,6 +1,6 @@
 <?php
-require_once("../do-an-web-php/Classes/Product.php");
-require_once("../do-an-web-php/Modules/db_module.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Classes/Product.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Modules/db_module.php");
 
 class ProductModel
 {

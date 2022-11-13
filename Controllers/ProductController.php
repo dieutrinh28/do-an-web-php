@@ -1,5 +1,5 @@
 <?php
-require_once("../do-an-web-php/Models/ProductModel.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Models/ProductModel.php");
 
 class ProductController
 {
@@ -14,20 +14,20 @@ class ProductController
     {
         if (!isset($_GET["productid"])) {
             $products = $this->model->getProductList();
-            include "../do-an-web-php/Views/productlist.php";
+            include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/users/productlist.php");
         } else {
             $product = $this->model->getProduct($_GET["productid"]);
-            include "../do-an-web-php/Views/viewproduct.php";
+            include($_SERVER['DOCUMENT_ROOT'] . "/Views/users/viewproduct.php");
         }
     }
     public function invokeAdmin()
     {
         if (!isset($_GET["productid"])) {
             $products = $this->model->getProductList();
-            include "../do-an-web-php/Views/admin/product.php";
+            include "../../Views/admin/product.php";
         } else {
             $product = $this->model->getProduct($_GET["productid"]);
-            include "../do-an-web-php/Views/admin/update-product.php";
+            include "../../Views/admin/update-product.php";
         }
     }
     public function create()
@@ -37,7 +37,7 @@ class ProductController
             if ($result) {
                 header("Location:" . URL . "/Views/admin/product.php");
             } else {
-                header("Location:" . URL . "/Views/home.php");
+                header("Location:" . URL . "/Views/users/home.php");
             }
         } else {
             include '../do-an-web-php/Views/admin/create-product.php';
@@ -51,7 +51,7 @@ class ProductController
             if ($result) {
                 header("Location:" . URL . "/Views/admin/product.php");
             } else {
-                header("Location:" . URL . "/Views/home.php");
+                header("Location:" . URL . "/Views/users/home.php");
             }
         } else {
             include '../do-an-web-php/Views/admin/update-product.php';

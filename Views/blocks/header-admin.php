@@ -23,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo URL ?>/Views/admin/product.php">PRODUCT<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../admin/product.php">PRODUCT<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="<?php echo URL ?>/Views/admin/create-product.php">NEW PRODUCT</a>
+                        <a class="nav-link" href="../admin/create-product.php">NEW PRODUCT</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="<?php echo URL ?>/Views/admin/customers.php">CUSTOMER</a>
+                        <a class="nav-link" href="../admin/customers.php">CUSTOMER</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo URL ?>/Views/admin/orders.php">ORDER</a>
+                        <a class="nav-link" href="../admin/orders.php">ORDER</a>
                     </li>
                 </ul>
                 <a href="" class="w-25 px-5"><i class="fas fa-user-cog pr-2"></i>logout</a>
