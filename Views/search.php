@@ -196,7 +196,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">AZURE</h5>
-                                        <h5 class="caed-text items-content__price">42 USD</h5>
+                                        <h5 class="card-text items-content__price">42 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -207,7 +207,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NC4</h5>
-                                        <h5 class="caed-text items-content__price">26 USD</h5>
+                                        <h5 class="card-text items-content__price">26 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -218,7 +218,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">MASSENA</h5>
-                                        <h5 class="caed-text items-content__price">25 USD</h5>
+                                        <h5 class="card-text items-content__price">25 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -229,7 +229,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">ROUND</h5>
-                                        <h5 class="caed-text items-content__price">22 USD</h5>
+                                        <h5 class="card-text items-content__price">22 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -240,7 +240,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">YC1</h5>
-                                        <h5 class="caed-text items-content__price">24 USD</h5>
+                                        <h5 class="card-text items-content__price">24 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -251,7 +251,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">YC1</h5>
-                                        <h5 class="caed-text items-content__price">24 USD</h5>
+                                        <h5 class="card-text items-content__price">24 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -262,7 +262,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">SKIFF CHAIR</h5>
-                                        <h5 class="caed-text items-content__price">2 USD</h5>
+                                        <h5 class="card-text items-content__price">2 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -273,7 +273,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">HARU COLLECTION</h5>
-                                        <h5 class="caed-text items-content__price">21 USD</h5>
+                                        <h5 class="card-text items-content__price">21 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -284,7 +284,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">BRIO</h5>
-                                        <h5 class="caed-text items-content__price">20 USD</h5>
+                                        <h5 class="card-text items-content__price">20 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -295,7 +295,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -306,7 +306,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NAGI 2011</h5>
-                                        <h5 class="caed-text items-content__price">31 USD</h5>
+                                        <h5 class="card-text items-content__price">31 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -317,7 +317,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -328,7 +328,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -339,7 +339,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -350,7 +350,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -361,7 +361,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -372,7 +372,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -383,7 +383,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -394,7 +394,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>
@@ -405,7 +405,7 @@
                                     </div>
                                     <div class="card-body items-content">
                                         <h5 class="card-title items-content__name">NS-2</h5>
-                                        <h5 class="caed-text items-content__price">32 USD</h5>
+                                        <h5 class="card-text items-content__price">32 USD</h5>
                                     </div>
                                 </a>
                             </div>

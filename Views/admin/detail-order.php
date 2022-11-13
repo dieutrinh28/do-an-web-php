@@ -25,9 +25,7 @@
         <table class="mb-5 productlist">
             <thead>
                 <tr>
-                    <th>
-                        <h1>ID</h1>
-                    </th>
+                   
                     <th>
                         <h1>ID ORDER</h1>
                     </th>

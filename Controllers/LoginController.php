@@ -1,5 +1,5 @@
 <?php
-require_once("../do-an-web-php/Models/UserModel.php");
+require_once("../../Models/UserModel.php");
 session_start();
 class UserController
 {
@@ -11,25 +11,54 @@ class UserController
 
     public function invoke()
     {
-        $errors = array();
-        if (!(isset($_GET['username']) && isset($_GET['password']))){ 
-            include("../do-an-web-php/Views/users/signin.php");
-        } else {
-            if ($this->model->login($_GET['username'], $_GET['password']) == true) {
-                if($_GET['username']=='admin')
-                {
-                    include("../do-an-web-php/Views/admin/customers.php");
-                }else
-                {
-                    $_SESSION['username'] = $_GET['username'];
-                    include("../do-an-web-php/Views/home.php");
+        if(isset($_POST['submitLogin']))
+        {
+
+            if ($this->model->login($_POST['username'], $_POST['password']) == true) {
+                echo "thanh cong";
+                if ($_POST['username'] == 'admin') {
+                    
+                    $users =  $this->model->getUserList();
+                    header("Location: ../admin/customers.php");
+
+                } else {
+                    
+                    $_SESSION['username'] = $_POST['username'];
+                    header("Location: ");
                 }
             } else {
-                array_push($errors,"Wrong username or password !");
-                include("../do-an-web-php/Views/users/signin.php");
+               // array_push($errors, "Wrong username or password !");
+                header("Location: ../users/signin.php");
             }
+            
         }
+        else
+        {
+            
+        }
+            // $errors = array();
+            // if (!(isset($_POST['username']) && isset($_POST['password']))){ 
+        //     include("../do-an-web-php/Views/users/signin.php");
+        // } else {
+        //     if ($this->model->login($_POST['username'], $_POST['password']) == true) {
+        //         if($_POST['username']=='admin')
+        //         {
 
-        }
+        //             $users=  $this->model->getUserList();
+        //             include("../do-an-web-php/Views/admin/customers.php");
+
+        //             //header("Location: ./Views/admin/customers.php");
+        //         }else
+        //         {
+
+        //             $_SESSION['username'] = $_POST['username'];
+        //             include("../do-an-web-php/Views/home.php");
+        //         }
+        //     } else {
+        //         array_push($errors,"Wrong username or password !");
+        //         include("../../Views/users/signin.php");
+        //     }
+        // }
+
     }
-
+}

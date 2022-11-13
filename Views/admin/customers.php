@@ -4,8 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furni3dots - Customer</title>
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/customers-ad.css">
+    <link rel="stylesheet" href="../../Public/CSS/header.css">
+    <link rel="stylesheet" href="../../Public/CSS/customers-ad.css">
 
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
 </head>
 <body>
     <?php
-        include_once ("../do-an-web-php/Views/blocks/header.php");
+        include_once ("../../Views/blocks/header.php");
     ?>
 
     <div class="container-fluid px-5">
@@ -46,7 +46,10 @@
             </thead>
             <tbody>
             </tr>
-        <?php
+        <?php   
+        // require_once("./do-an-web-php/Controllers/UserController.php");
+        // $controller = new UserController();
+        // $controller->invoke();
 
 
         if (empty($users)) {

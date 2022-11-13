@@ -31,6 +31,10 @@
         <div class='product py-5'>
             <div class='row'>
                 <?php
+                include_once("./Controllers/ProductController.php");
+                $controller = new ProductController();
+                $controller->invoke();
+
                 foreach ($products as $product)
                     echo "<div class='col-3'>
                             <div class =' card item chair'>

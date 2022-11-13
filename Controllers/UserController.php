@@ -11,7 +11,8 @@
         public function invoke()
         {
             if(!isset($_GET['keyword'])){
-                $users = $this->model->getuserlist();
+                $users = $this->model->getUserList();
+                //header("Location: ./Views/admin/customers.php");
                 include ("../do-an-web-php/Views/admin/customers.php");
             }else if(isset($_GET['keyword']))
             {

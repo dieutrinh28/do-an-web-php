@@ -59,15 +59,7 @@ class ProductController
     }
     public function delete($id)
     {
-        $data = $this->model->getProduct($id);
-        $result = $data->deleteProduct($id);
-        if ($result) {
-            echo "<div>success</div>";
-            header("Location:" . URL . "/Views/admin/product.php");
-        } else {
-            echo "<div>error</div>";
-            header("Location:" . URL . "/Views/home.php");
-        }
+        $result = $this->model->deleteProduct($id);
         include "../do-an-web-php/Views/admin/product.php";
     }
 }

@@ -1,7 +1,7 @@
 <?php
-require_once("../do-an-web-php/Modules/db_module.php");
-require_once("../do-an-web-php/Classes/User.php");
-require_once("../do-an-web-php/Models/validate.php");
+require_once("../../Modules/db_module.php");
+require_once("../../Classes/User.php");
+require_once("../../Models/validate.php");
 class UserModel
 {
     public function getUserList()
@@ -102,11 +102,11 @@ class UserModel
     }
     public function Logout($username)
     {
-        // if (isset($_SESSION['username'])) {
-        //     unset($_SESSION['username']);
-        //     return true;
-        // } else
-        //     return false;
+        if (isset($_SESSION['username'])) {
+            unset($_SESSION['username']);
+            return true;
+        } else
+            return false;
     }
 
     public function searchUser($keyword)

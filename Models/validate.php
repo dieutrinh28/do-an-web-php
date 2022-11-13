@@ -14,5 +14,5 @@
         mysqli_fetch_row($result);
         return $row[0]>0;
     }
-    
+    // con ga con gan co gay to ti te
 ?>
