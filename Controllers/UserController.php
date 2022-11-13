@@ -10,15 +10,16 @@
         
         public function invoke()
         {
-            if(!isset($_GET['userid'])){
+            if(!isset($_GET['keyword'])){
                 $users = $this->model->getUserList();
-                include ("../do-an-web-php/Views/userlist.php");
-            }
-            else
+                //header("Location: ./Views/admin/customers.php");
+                include ("../do-an-web-php/Views/admin/customers.php");
+            }else if(isset($_GET['keyword']))
             {
-                $users = $this->model->searchUser($_GET['userid']);
-                include ("../do-an-web-php/Views/userlist.php");
+                $users = $this->model->searchUser($_GET['keyword']);
+                include ("../do-an-web-php/Views/admin/customers.php");
             }
         }
         
     }
+?>  

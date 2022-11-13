@@ -1,42 +1,23 @@
 <?php
-    $_SESSION['giohang'] = [
-        1 => ['ten' => 'OPPO', 'soluong' => 3, 'gia' => 45],
-        2 => ['ten' => 'OPPO', 'soluong' => 3, 'gia' => 45],
-        3 => ['ten' => 'OPPO', 'soluong' => 3, 'gia' => 45]
-    ];
-    function addToCart($hang) {
-        if(isset($_SESSION['giohang'])) {
-            $giohang = $_SESSION['giohang'];
-            if(!array_key_exists($hang["id"], $giohang))
-            {
-                $giohang[$hang["id"]] = $hang;
-            }
-            $_SESSION['giohang'] = $giohang;
-        }
-        else
-        {
-            $giohang[$hang["id"]] = $hang;
-            $_SESSION['giohang'] = $giohang;
-        }
+session_start();
+require_once "../do-an-web-php/Modules/cart_module.php";
+
+if (isset($_POST['action'])) {
+    switch ($_POST['action']) {
+        case "Thêm vào giỏ":
+            $hang = array("id" => $_POST['id'], "ten" => $_POST['ten'], "gia" => $_POST['gia'], "soluong" => 1);
+            $this->model->themhangvaogio($hang);
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+            break;
+        case "Cập nhật":
+            $this->model->capnhathangtronggio($_POST['id'], $_POST['soluong']);
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+            break;
+        case "Xóa hàng":
+            $this->model->xoahangkhoigio($_POST['id']);
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+            break;
+        default:
+            break;
     }
-    function deleteFromCart($key) {
-        if(isset($_SESSION['giohang'])) {
-            $giohang = $_SESSION['giohang'];
-            unset($giohang[$key]);
-            $_SESSION['giohang'] = $giohang;
-        }
-    }
-    function updateCart($key, $soluong) {
-        if(isset($_SESSION['giohang'])) {
-            $giohang = $_SESSION['giohang'];
-            $giohang[$key]['soluong'] = $soluong;
-            $_SESSION['giohang'] = $giohang;
-        }
-    }
-    function payment() {
-        $sum = 0;
-        $giohang = $_SESSION['giohang'];
-        foreach($giohang as $v)
-            $sum+=$v['soluong']*$v['gia'];
-        return number_format($sum);
-    }
+}

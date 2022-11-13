@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furni3dots - Home</title>
-    <link rel="stylesheet" href="../Public/CSS/footer.css">
-    <link rel="stylesheet" href="../Public/CSS/cart.css">
-    <link rel="stylesheet" href="../Public/CSS/header.css">
+    <title>Furni3dots - Shopping Cart</title>
+    <link rel="stylesheet" href="<?php echo URL ?>/Public/CSS/header.css">
+    <link rel="stylesheet" href="<?php echo URL ?>/Public/CSS/footer.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- link owl carousel -->
@@ -21,10 +20,9 @@
 </head>
 
 <body>
-
     <!-- header -->
     <?php
-    require_once("../Views/blocks/header.php");
+    include_once("./Views/blocks/header.php");
     ?>
     <!-- body -->
     <section class="h-100 gradient-custom">
@@ -33,14 +31,15 @@
                 <div class="col-md-8">
                     <div class="card mb-4">
                         <div class="card-header py-3">
-                            <h5 class="mb-0">SHOPPING CART - 2 items</h5>
+                            <h5 class="mb-0">SHOPPING CART</h5>
                         </div>
                         <div class="card-body">
                             <!-- Single item -->
                             <?php
-                            require_once("../Controllers/CartController.php");
-                            foreach ($_SESSION['giohang'] as $product => $sp)
-                                echo "<div class='row'>
+                            if (isset($_SESSION['giohang'])) {
+                                $giohang = $_SESSION['giohang'];
+                                foreach ($giohang as $product => $sp)
+                                    echo "<div class='row'>
                                 <div class='col-lg-3 col-md-12 mb-4 mb-lg-0'>
                                     <!-- Image -->
                                     <div class='bg-image hover-overlay hover-zoom ripple rounded' data-mdb-ripple-color='light'>
@@ -51,13 +50,12 @@
                                     </div>
                                     
                                 </div>
-
                                 <div class='col-lg-5 col-md-6 mb-4 mb-lg-0'>
                                     <!-- Data -->
                                     <p><strong>" . $sp['ten'] . "</strong></p>
                                     <p>Color: blue</p>
                                     <p>Size: M</p>
-                                    <button type='button' class='btn btn-primary btn-sm me-1 mb-2' data-mdb-toggle='tooltip' title='Remove item'>
+                                    <button type='button' class='btn btn-primary btn-sm me-1 mb-2' data-mdb-toggle='tooltip' title='Remove item' name='action' value='Xóa hàng'>
                                         <i class='fas fa-trash'></i>
                                     </button>
                                     <button type='button' class='btn btn-danger btn-sm mb-2' data-mdb-toggle='tooltip' title='Move to the wish list'>
@@ -65,7 +63,6 @@
                                     </button>
                                 
                                 </div>
-
                                 <div class='col-lg-4 col-md-6 mb-4 mb-lg-0'>
                                     <!-- Quantity -->
                                     <div class='d-flex mb-4' style='max-width: 300px'>
@@ -74,7 +71,6 @@
                                             <input id='form1' min='0' name='quantity' value='" . $sp['soluong'] . "' type='number' class='form-control' />
                                             <label class='form-label' for='form1'></label>
                                         </div>
-
                                     </div>
                                    
                                     <!-- Price -->
@@ -85,12 +81,13 @@
                                 </div>
                             </div>
                           
-                            <hr class='my-4' />"
+                            <hr class='my-4' />";
+                            }
                             ?>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-header py-3">
@@ -129,7 +126,7 @@
 
     <!--Footer-->
     <?php
-    require_once("../Views/blocks/footer.php");
+    include_once("../Views/blocks/footer.php");
     ?>
     <!-- link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

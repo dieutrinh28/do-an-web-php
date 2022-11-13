@@ -7,6 +7,7 @@ class Product
     private $price;
     private $image;
     private $idloaisp;
+    private $status;
 
     public function getId()
     {
@@ -28,12 +29,16 @@ class Product
     {
         return $this->image;
     }
-    public function getIdLoaiSP()
+    public function getCategory()
     {
         return $this->idloaisp;
     }
+    public function getStatus()
+    {
+        return $this->status;
+    }
 
-    public function __construct($id, $name, $description, $price, $image, $idloaisp)
+    public function __construct($id, $name, $description, $price, $image, $idloaisp, $status)
     {
         $this->id = $id;
         $this->name = $name;
@@ -41,10 +46,11 @@ class Product
         $this->price = $price;
         $this->image = $image;
         $this->idloaisp = $idloaisp;
+        $this->status = $status;
     }
 
     public function __toString()
     {
-        return "Product($this->id, $this->name, $this->description, $this->price, $this->image, $this->idloaisp)";
+        return "Product($this->id, $this->name, $this->description, $this->price, $this->image, $this->idloaisp, $this->status)";
     }
 }

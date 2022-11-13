@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furni3dots - Home</title>
+    <title>Furni3dots - Product Detail</title>
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/home.css">
+    <link rel="stylesheet" href="../../Public/CSS/productdetail.css">
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/footer.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -23,50 +23,36 @@
 <body>
     <!-- header -->
     <?php
-    require_once("../do-an-web-php/Views/blocks/header.php");
+    include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header.php");
     ?>
     <!-- body -->
+    <div class="body global">
+        <div class="left">
+            <?php
+            echo "<div class='item-img'>
+                     <img src='../../Assets/img/" . $product->getImage() . "'>
+                </div>"
+            ?>
 
-    <h1>userlist</h1>
-    <form method="get" action="">
-        <input type="text" name="keyword" />
-        <input type="submit" value="search" />
-    </form>
-
-    <table>
-        <tr>
-            <th>Full name</th>
-            <th>Phone</th>
-            <th>Password</th>
-            <th>Address</th>
-
-        </tr>
-        <?php
-
-
-        if (empty($users)) {
-            echo "ko tim thay ket qua";
-        } else {
-            foreach ($users as $user) {
-                echo "
-                <tr>
-                <td><a href = 'index.php?userid=" . $user->getFullname() . "'>" . $user->getFullname() . "</a></td>
-                <td>" . $user->getSdt() . "</td>
-                <td>" . $user->getPassword() . "</td>
-                <td>" . $user->getAddress() . "</td>
-                </tr>
-                ";
-            }
-        }
-
-        ?>
-    </table>
-
-
+        </div>
+        <div class="right">
+            <div class="emojis">
+                <a href=""><i class="fas fa-angle-left"></i></a>
+                <a href=""><i class="fas fa-angle-right"></i></i></a>
+            </div>
+            <div id='content_border'>
+                <?php
+                echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
+                echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
+                echo "<button class='btn btn-primary btn_addToCart' type='submit' name='action' value='Thêm vào giỏ'>ADD TO CART</button>"
+                ?>
+            </div>
+        </div>
+    </div>
 
     <!--Footer-->
     <?php
-    require_once("../do-an-web-php/Views/blocks/footer.php");
+    include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/footer.php");
     ?>
     <!-- link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

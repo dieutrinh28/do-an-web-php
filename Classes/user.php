@@ -2,24 +2,24 @@
 class User
 {
     private $id;
-    private $fullname;
+    private $name;
     private $password;
-    private $sdt;
+    private $phoneNum;
     private $address;
     private $username;
-    private $decentralization;
+    private $email;
 
     public function getId()
     {
         return $this->id;
     }
-    public function getFullname()
+    public function getName()
     {
-        return $this->fullname;
+        return $this->name;
     }
-    public function getSdt()
+    public function getPhoneNum()
     {
-        return $this->sdt;
+        return $this->phoneNum;
     }
     public function getPassword()
     {
@@ -34,19 +34,18 @@ class User
     {
         return $this->username;
     }
-    public function getDecentralization()
+    public function getEmail()
     {
-        return $this->decentralization;
+        return $this->email;
     }
-
-    public function __construct($id, $fullname, $sdt, $password, $address, $username, $decentralization)
+    public function __construct($id, $name, $phoneNum, $password, $address, $username,$email)
     {
         $this->id = $id;
-        $this->fullname = $fullname;
-        $this->sdt = $sdt;
         $this->password = $password;
         $this->address = $address;
         $this->username = $username;
-        $this->decentralization = $decentralization;
+        $this->name = $name;
+        $this->phoneNum = $phoneNum;
+        $this->email=$email;
     }
 }

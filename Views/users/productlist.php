@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furni3dots - Home</title>
+    <title>Furni3dots - List Products</title>
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/productdetail.css">
+    <link rel="stylesheet" href="../../Public/CSS/productlist.css">
     <link rel="stylesheet" href="../do-an-web-php/Public/CSS/footer.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -23,31 +23,27 @@
 <body>
     <!-- header -->
     <?php
-    require_once("../do-an-web-php/Views/blocks/header.php");
+    include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header.php");
     ?>
     <!-- body -->
-    <div class="body global">
-        <div class="left">
-            <?php
-            echo "<div class='item-img'>
-                     <img src='../do-an-web-php/Assets/img/" . $product->getImage() . "'>
-                </div>"
-            ?>
+    <div class="container-fluid homepage px-5">
 
-        </div>
-        <div class="right">
-            <div class="emojis">
-                <a href=""><i class="fas fa-angle-left"></i></a>
+        <div class='product py-5'>
+            <div class='row'>
                 <?php
-                
-                ?>
-
-                <a href=""><i class="fas fa-angle-right"></i></i></a>
-            </div>
-            <div id='content_border'>
-                <?php
-                echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
-                echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
+                foreach ($products as $product)
+                    echo "<div class='col-3'>
+                            <div class =' card item chair'>
+                                <a href = 'product.php?productid=" . $product->getId() . "' >
+                                    <div class='item-img'>
+                                        <img src='../../Assets/img/" . $product->getImage() . "'>
+                                    </div>
+                                    <div class='card-body items-content'>
+                                        <h5 class='card-title items-content__name'>" . $product->getName() . "</h5>
+                                    </div>                          
+                                </a>
+                            </div>
+                        </div>"
                 ?>
             </div>
         </div>
@@ -55,7 +51,7 @@
 
     <!--Footer-->
     <?php
-    require_once("../do-an-web-php/Views/blocks/footer.php");
+    include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/footer.php");
     ?>
     <!-- link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allcarta - Login</title>
+    <title>Furni3dots - Admin</title>
     <link rel="stylesheet" href="../../Public/CSS/header.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -23,26 +23,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../users/home.php">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../admin/product.php">PRODUCT<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="../users/product.php">Product</a>
+                        <a class="nav-link" href="../admin/create.php">NEW PRODUCT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../admin/customers.php">CUSTOMER</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../users/cart.php">Cart</a>
+                        <a class="nav-link" href="../admin/orders.php">ORDER</a>
                     </li>
-                    </li class="nav-item"> <a class="nav-link" href="../users/signin.php">Log in</a>
                 </ul>
-                <form class="form-inline my-lg-0">
-                    <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">
-                    <i class="fas fa-search nav-icon-search"></i>
-                </form>
-                <div class="avt">
-                    <img src="../../Assets/img/sofa-1-1.jpg" alt="">
-                </div>
+                <a href="" class="w-25 px-5"><i class="fas fa-user-cog pr-2"></i>logout</a>
             </div>
-    </div>
-    </nav>
+        </nav>
     </div>
 </body>
 
