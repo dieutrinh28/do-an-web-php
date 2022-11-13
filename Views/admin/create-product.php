@@ -74,7 +74,7 @@
                 </section>
             </fieldset>
 
-            <button type="submit" name="submit">
+            <button href="" type="submit" name="submit">
                 <p class="submit">SUBMIT</p>
             </button>
 

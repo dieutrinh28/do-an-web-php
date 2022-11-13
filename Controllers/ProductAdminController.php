@@ -1,24 +1,13 @@
 <?php
 require_once("../do-an-web-php/Models/ProductModel.php");
 
-class ProductController
+class ProductAdminController
 {
     public $model;
 
     public function __construct()
     {
         $this->model = new ProductModel();
-    }
-
-    public function invoke()
-    {
-        if (!isset($_GET["productid"])) {
-            $products = $this->model->getProductList();
-            include "../do-an-web-php/Views/productlist.php";
-        } else {
-            $product = $this->model->getProduct($_GET["productid"]);
-            include "../do-an-web-php/Views/viewproduct.php";
-        }
     }
     public function invokeAdmin()
     {

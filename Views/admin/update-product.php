@@ -23,19 +23,20 @@
 
     <div class="container-fluid px-5 add-product mt-5">
 
-        <form action="" method="POST">
+        <form action="<?php echo URL ?>/product/editProduct/<?php echo $value['productId'] ?>" method="POST">
             <h2 class="mb-3">UPDATE PRODUCT</h2>
             <fieldset>
                 <section>
+                    <input type="hidden" name="id" value='<?php echo $product->getId() ?>'></input>
                     <div class="input-block">
                         <label for="name">Name</label>
-                        <input class="input" type="text" name="name" autocomplete="off" value='<?php echo   $product->getName()  ?>' placeholder="Enter your Product name">
+                        <input class="input" type="text" name="name" autocomplete="off" value='<?php echo $product->getName() ?>' placeholder="Enter your Product name">
                     </div>
 
 
                     <div class="input-block">
                         <label for="price">Price</label>
-                        <input class="input" type="text" name="price" autocomplete="off" value='<?php echo   $product->getPrice()  ?>' placeholder="Price">
+                        <input class="input" type="text" name="price" autocomplete="off" value='<?php echo $product->getPrice() ?>' placeholder="Price">
                     </div>
                     <div class="input-block">
                         <label for="category">Categories</label>
@@ -52,10 +53,6 @@
                 </section>
 
                 <section>
-                    <!-- <div class="input-block">
-                        <label for="Description">Description</label>
-                        <textarea class="input" type="text" value='<?php echo $product->getDescription()  ?>' placeholder="Description" name="description" cols="30" rows="10"></textarea>
-                    </div> -->
                     <div class="input-block">
                         <label for="Description">Description</label>
                         <input class="des" type="text" value='<?php echo $product->getDescription()  ?>' placeholder="Description" name="description" "></input>
@@ -67,15 +64,15 @@
                             <label for="thumb1">Upload Image</label>
                             <label for="thumb1-btn" class="upload-btn" id="thumb1"><?php echo $product->getImage() ?></label>
                             <input type="file" name="image" id="thumb1-btn">
-                            <!-- <span class="image-upload-check1">No file uploaded</span> -->
+                            <span class="image-upload-check1">Recent file uploaded</span>
                         </div>
 
-                        <!-- <div class="UploadImage">
+                        <div class="UploadImage">
                             <label for="thumb2">Upload Image Detail</label>
                             <label for="thumb2-btn" class="upload-btn" id="thumb2">Upload File</label>
                             <input type="file" name="image_detail" id="thumb2-btn">
                             <span class="image-upload-check2">No file uploaded</span>
-                        </div> -->
+                        </div>
 
                     </div>
 

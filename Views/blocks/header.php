@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <!-- link font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Alertify JS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
 </head>
 
 <body>
@@ -23,13 +27,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo URL ?>/Views/home.php">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?php echo URL ?>/home">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="<?php echo URL ?>/Views/productlist.php">PRODUCT</a>
+                        <a class="nav-link" href="<?php echo URL ?>/productlist">PRODUCT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo URL ?>/Views/shopping-cart.php">CART</a>
+                        <a class="nav-link" href="<?php echo URL ?>/cart">CART</a>
                     </li>
                 </ul>
                 <form class="form-inline my-lg-0">
