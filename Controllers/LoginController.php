@@ -18,7 +18,7 @@ class UserController
                 if ($_POST['username'] == 'admin') {
 
                     $users =  $this->model->getUserList();
-                    header("Location: ../admin/customerlist.php");
+                    header("Location: ../admin/customers.php");
                 } else {
 
                     $_SESSION['username'] = $_POST['username'];

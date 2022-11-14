@@ -11,7 +11,7 @@ class UserModel
         $result = chayTruyVanTraVeDL($link, "select * from tbl_user");
         $data = array();
         while ($rows = mysqli_fetch_assoc($result)) {
-            $user = new User($rows['id'], $rows['name'], $rows['phoneNum'], $rows['password'], $rows['email'], $rows['username'], $rows['address']);
+            $user = new User($rows['id'], $rows['name'], $rows['phonenum'], $rows['password'], $rows['email'], $rows['username'], $rows['address']);
             array_push($data, $user);
         }
         giaiPhongBoNho($link, $result);
