@@ -11,33 +11,27 @@ class UserController
 
     public function invoke()
     {
-        if(isset($_POST['submitLogin']))
-        {
+        if (isset($_POST['submitLogin'])) {
 
             if ($this->model->login($_POST['username'], $_POST['password']) == true) {
 
                 if ($_POST['username'] == 'admin') {
-                    
-                    $users =  $this->model->getUserList();
-                    header("Location: ../admin/customers.php");
 
+                    $users =  $this->model->getUserList();
+                    header("Location: ../admin/customerlist.php");
                 } else {
-                    
+
                     $_SESSION['username'] = $_POST['username'];
-                    header("Location: ");
+                    header("Location: ../users/home.php");
                 }
             } else {
-               // array_push($errors, "Wrong username or password !");
+                // array_push($errors, "Wrong username or password !");
                 header("Location: ../users/signin.php");
             }
-            
+        } else {
         }
-        else
-        {
-            
-        }
-            // $errors = array();
-            // if (!(isset($_POST['username']) && isset($_POST['password']))){ 
+        // $errors = array();
+        // if (!(isset($_POST['username']) && isset($_POST['password']))){ 
         //     include("../do-an-web-php/Views/users/signin.php");
         // } else {
         //     if ($this->model->login($_POST['username'], $_POST['password']) == true) {

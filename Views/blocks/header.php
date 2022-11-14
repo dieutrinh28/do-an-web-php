@@ -32,12 +32,12 @@
                         <a class="nav-link" href="../users/shopping-cart.php">Cart</a>
                     </li>
                     </li class="nav-item"> <a class="nav-link" href="../users/signin.php">Log in</a>
-                    </li class="nav-item"> <a class="nav-link" href="../users/signup.php">Log out</a>
+                    </li class="nav-item"> <a class="nav-link" href="../users/signup.php">Sign up</a>
                 </ul>
                 <form class="form-inline my-lg-0" action="../users/product.php" method="post">
                     <input class="form-control mr-sm-3" type="text" placeholder="Search" name="keyword" aria-label="Search">
 
-                    <i class="fas fa-search nav-icon-search" type= "submit"></i>
+                    <i class="fas fa-search nav-icon-search" type="submit"></i>
                 </form>
                 <div class="avt">
                     <img src="../../Assets/img/sofa-1-1.jpg" alt="">
