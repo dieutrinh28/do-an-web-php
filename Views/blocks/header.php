@@ -32,6 +32,7 @@
                         <a class="nav-link" href="../users/shopping-cart.php">Cart</a>
                     </li>
                     </li class="nav-item"> <a class="nav-link" href="../users/signin.php">Log in</a>
+                    </li class="nav-item"> <a class="nav-link" href="../users/signup.php">Log out</a>
                 </ul>
                 <form class="form-inline my-lg-0">
                     <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">

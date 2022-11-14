@@ -1,5 +1,5 @@
 <?php
-require_once '../do-an-web-php/Models/UserModel.php';
+require_once '../../Models/UserModel.php';
 class UserController
 {
     public $model;
@@ -12,37 +12,30 @@ class UserController
     {
     
         $errors = array();
-         if (
-            !(
-                isset($_GET['username']) &&
-                isset($_GET['password']) &&
-                isset($_GET['email']) &&
-                isset($_GET['phoneNum']) &&
-                isset($_GET['name']) &&
-                isset($_GET['address'])
-            )
-        ) {
-            //array_push($errors,"Please fill out your information!");
-            include '../do-an-web-php/Views/users/signup.php';
-        } else {
-            switch($this->model->register($_GET['username'],$_GET['password'],$_GET['email'],$_GET['phoneNum'],$_GET['address'],$_GET['name'],$_GET['confirmPass']))
+        if(isset($_POST['submitSignup']))
+        {
+            switch($this->model->register($_POST['username'],$_POST['password'],$_POST['email'],$_POST['phoneNum'],$_POST['address'],$_POST['name'],$_POST['confirmPass']))
                 {
                     case 0: 
                         {
-                            include '../do-an-web-php/Views/users/signin.php';
+                            header("Location: ../users/signin.php?msg=true");
                         }
                     case 1:
                         {
+                            echo "1";
                             array_push($errors,"This account has been exist.");
-                            include '../do-an-web-php/Views/users/signup.php';
+                            header("Location: ../users/signup.php?msg=1");
+
                         }
                     case 3:
                         {
+                            echo "2";
                             array_push($errors,"Your information is not valid.");
-                            include '../do-an-web-php/Views/users/signup.php';
+                            header("Location: ../users/signup.php?msg=invalid_input_data");
+
                         }
-                }
-            }
+                    }
+        }
 
         
     }
