@@ -46,14 +46,14 @@
                 </tr>
             </thead>
             <tbody>
-                </tr>
+
                 <?php
 
 
                 foreach ($users as $user) {
                     echo "
                         <tr>
-                        <td><a href = 'index.php?userid=" . $user->getName() . "'>" . $user->getName() . "</a></td>
+                        <td>" . $user->getName() . "</td>
                         <td>" . $user->getPhoneNum() . "</td>
                         <td>" . $user->getAddress() . "</td>
                         <td>" . $user->getEmail() . "</td>

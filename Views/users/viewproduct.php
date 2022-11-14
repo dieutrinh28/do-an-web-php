@@ -27,27 +27,40 @@
     ?>
     <!-- body -->
     <div class="body global">
-        <div class="left">
-            <?php
-            echo "<div class='item-img'>
+        <form action="../../Controllers/CartController.php" method="post">
+            <div class="left">
+                <?php
+                echo "<div class='item-img'>
                      <img src='../../Assets/img/" . $product->getImage() . "'>
                 </div>"
-            ?>
-
-        </div>
-        <div class="right">
-            <div class="emojis">
-                <a href=""><i class="fas fa-angle-left"></i></a>
-                <a href=""><i class="fas fa-angle-right"></i></i></a>
-            </div>
-            <div id='content_border'>
-                <?php
-                echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
-                echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
-                echo "<button class='btn btn-primary btn_addToCart' type='submit' name='action' value='Thêm vào giỏ'>ADD TO CART</button>"
                 ?>
+
             </div>
-        </div>
+            <div class="right">
+                <div class="emojis">
+                    <a href=""><i class="fas fa-angle-left"></i></a>
+                    <a href=""><i class="fas fa-angle-right"></i></i></a>
+                </div>
+                <div id='content_border'>
+                    <?php
+                    echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
+                    echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
+                    echo
+                    "
+                    <div>
+                    <input type='hidden' name='id' value='" . $product->getId() . "'>
+                    <input type='hidden' name='name' value='" . $product->getName() . "'>
+                    <input type='hidden' name='price' value='" . $product->getPrice() . "'>
+                    <input type='hidden' name='image' value='" . $product->getImage() . "'>
+                    <input type='hidden' name='quantity' value='1'>
+                    <button class='btn btn-primary btn_addToCart' type='submit' name='cartcontroller' value='addToCart'>ADD TO CART</button>
+                    <button class='btn btn-primary btn_addToCart' type='submit' name='cartcontroller' value='buyNow'>BUY NOW</button>
+                    </div>
+                    "
+                    ?>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!--Footer-->
