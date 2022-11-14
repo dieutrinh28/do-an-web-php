@@ -46,15 +46,15 @@
                 </tr>
             </thead>
             <tbody>
-                
+                </tr>
                 <?php
 
 
                 foreach ($users as $user) {
                     echo "
                         <tr>
-                        <td>" . $user->getName() ." </td>
-                        <td>" . $user->getPhoneNum() .  "</td>
+                        <td>" . $user->getName() . "</td>
+                        <td>" . $user->getPhoneNum() . "</td>
                         <td>" . $user->getAddress() . "</td>
                         <td>" . $user->getEmail() . "</td>                         
                         </tr>

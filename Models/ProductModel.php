@@ -43,7 +43,7 @@ class ProductModel
     {
         $link = null;
         taoKetNoi($link);
-        $result = chayTruyVanTraVeDL($link, "SELECT * FROM tbl_products WHERE pro_name LIKE '%" . $keyword . "%'");
+        $result = chayTruyVanTraVeDL($link,  "select * from tbl_products where pro_name like '%" . $keyword . "%'");
         $data = array();
         while ($rows = mysqli_fetch_assoc($result)) {
             $product = new Product($rows["pro_id"], $rows["pro_name"], $rows["pro_des"], $rows["price"], $rows["pic"], $rows["cat_id"], $rows["status"]);
