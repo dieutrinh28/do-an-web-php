@@ -15,7 +15,7 @@ class UserController
         {
 
             if ($this->model->login($_POST['username'], $_POST['password']) == true) {
-                echo "thanh cong";
+
                 if ($_POST['username'] == 'admin') {
                     
                     $users =  $this->model->getUserList();

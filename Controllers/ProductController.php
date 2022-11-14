@@ -12,10 +12,15 @@ class ProductController
 
     public function invoke()
     {
-        if (!isset($_GET["productid"])) {
+        if (!isset($_GET["productid"]) && !isset($_POST['keyword'])) {
             $products = $this->model->getProductList();
             include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/users/productlist.php");
-        } else {
+        } 
+        else if (!isset($_GET["productid"]) && isset($_POST['keyword'])) {
+            $products = $this->model->searchProduct($_POST['keyword']);
+            include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/users/productlist.php");
+        }
+        else {
             $product = $this->model->getProduct($_GET["productid"]);
             include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/users/viewproduct.php");
         }
@@ -52,5 +57,6 @@ class ProductController
         } else {
             include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/admin/create-product.php");
         }
-    }
+    }   
+
 }
