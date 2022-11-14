@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +46,7 @@
                                 <div class='col-lg-3 col-md-12 mb-4 mb-lg-0'>
                                     <!-- Image -->
                                     <div class='bg-image hover-overlay hover-zoom ripple rounded' data-mdb-ripple-color='light'>
-                                        <img src='https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp' class='w-100' alt='Blue Jeans Jacket' />
+                                        <img src='../../Assets/img/" . $sp['image'] . "' class='w-100' alt='' />
                                         <a href='#!'>
                                             <div class='mask' style='background-color: rgba(251, 251, 251, 0.2)'></div>
                                         </a>
@@ -52,7 +55,7 @@
                                 </div>
                                 <div class='col-lg-5 col-md-6 mb-4 mb-lg-0'>
                                     <!-- Data -->
-                                    <p><strong>" . $sp['ten'] . "</strong></p>
+                                    <p><strong>" . $sp['name'] . "</strong></p>
                                     <p>Color: blue</p>
                                     <p>Size: M</p>
                                     <button type='button' class='btn btn-primary btn-sm me-1 mb-2' data-mdb-toggle='tooltip' title='Remove item' name='action' value='Xóa hàng'>
@@ -68,14 +71,14 @@
                                     <div class='d-flex mb-4' style='max-width: 300px'>
                                        
                                         <div class='form-outline'>
-                                            <input id='form1' min='0' name='quantity' value='" . $sp['soluong'] . "' type='number' class='form-control' />
+                                            <input id='form1' min='0' name='quantity' value='" . $sp['quantity'] . "' type='number' class='form-control' />
                                             <label class='form-label' for='form1'></label>
                                         </div>
                                     </div>
                                    
                                     <!-- Price -->
                                     <p class='text-start text-md-center'>
-                                        <strong>$ " . $sp['gia'] * $sp['soluong'] . "</strong>
+                                        <strong>$ " . $sp['price'] * $sp['quantity'] . "</strong>
                                     </p>
                                     
                                 </div>
