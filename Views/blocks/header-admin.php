@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html lang="en">
 
 <head>
@@ -35,7 +38,15 @@
                         <a class="nav-link" href="../admin/orders.php">ORDER</a>
                     </li>
                 </ul>
-                <a href="" class="w-25 px-5"><i class="fas fa-user-cog pr-2"></i>logout</a>
+                <!-- <a href="" class="w-25 px-5"><i class="fas fa-user-cog pr-2"></i>logout</a> -->
+                </li class="nav-item"> <a class="nav-link" href="../users/home.php"> <?php
+                    if (isset($_SESSION['username'])) {
+                        unset($_SESSION['username']);
+                       echo "Logout";
+                    }
+                    
+                    ?></a>
+                
             </div>
         </nav>
     </div>

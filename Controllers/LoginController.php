@@ -1,6 +1,6 @@
 <?php
 require_once("../../Models/UserModel.php");
-session_start();
+//session_start();
 class UserController
 {
     public $model;
@@ -30,29 +30,6 @@ class UserController
             }
         } else {
         }
-        // $errors = array();
-        // if (!(isset($_POST['username']) && isset($_POST['password']))){ 
-        //     include("../do-an-web-php/Views/users/signin.php");
-        // } else {
-        //     if ($this->model->login($_POST['username'], $_POST['password']) == true) {
-        //         if($_POST['username']=='admin')
-        //         {
-
-        //             $users=  $this->model->getUserList();
-        //             include("../do-an-web-php/Views/admin/customers.php");
-
-        //             //header("Location: ./Views/admin/customers.php");
-        //         }else
-        //         {
-
-        //             $_SESSION['username'] = $_POST['username'];
-        //             include("../do-an-web-php/Views/home.php");
-        //         }
-        //     } else {
-        //         array_push($errors,"Wrong username or password !");
-        //         include("../../Views/users/signin.php");
-        //     }
-        // }
-
+      
     }
 }
