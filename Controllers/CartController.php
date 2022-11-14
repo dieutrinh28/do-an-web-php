@@ -14,17 +14,18 @@ if (isset($_POST['cartcontroller'])) {
         "quantity" => $_POST['quantity'],
         "total" => $total
     );
-    switch ($_POST['cartcontroller']) {
-        case "addToCart":
-            themhangvaogio($product);
-            header("Location: " . $_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/users/product.php");
-            break;
-        case "buyNow":
-            themhangvaogio($product);
-            header("Location: " . $_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/users/shopping-cart.php");
-            break;
-        default:
-            header("Location: " . $_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/users/product.php");
-            break;
+    if (isset($_POST['cartcontroller'])) {
+        switch ($_POST['cartcontroller']) {
+            case "addToCart":
+                themhangvaogio($product);
+                header("Location: ../Views/users/product.php");
+                break;
+            case "buyNow":
+                themhangvaogio($product);
+                header("Location: ../Views/users/shopping-cart.php");
+                break;
+            default:
+                break;
+        }
     }
 }

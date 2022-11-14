@@ -54,6 +54,7 @@
                     <input type='hidden' name='image' value='" . $product->getImage() . "'>
                     <input type='hidden' name='quantity' value='1'>
                     <button class='btn btn-primary btn_addToCart' type='submit' name='cartcontroller' value='addToCart'>ADD TO CART</button>
+                    <button class='btn btn-primary btn_addToCart' type='submit' name='cartcontroller' value='buyNow'>BUY NOW</button>
                     </div>
                     "
                     ?>

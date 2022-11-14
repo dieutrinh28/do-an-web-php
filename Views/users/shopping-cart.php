@@ -36,7 +36,7 @@ session_start();
                         <div class="card-header py-3">
                             <h5 class="mb-0">SHOPPING CART</h5>
                         </div>
-                        <div class="card-body">
+                        <form class="card-body" action='../../Controllers/CartAction.php' method='post'>
                             <!-- Single item -->
                             <?php
                             if (isset($_SESSION['giohang'])) {
@@ -51,14 +51,19 @@ session_start();
                                             <div class='mask' style='background-color: rgba(251, 251, 251, 0.2)'></div>
                                         </a>
                                     </div>
-                                    
                                 </div>
                                 <div class='col-lg-5 col-md-6 mb-4 mb-lg-0'>
                                     <!-- Data -->
                                     <p><strong>" . $sp['name'] . "</strong></p>
-                                    <p>Color: blue</p>
-                                    <p>Size: M</p>
-                                    <button type='button' class='btn btn-primary btn-sm me-1 mb-2' data-mdb-toggle='tooltip' title='Remove item' name='action' value='Xóa hàng'>
+                                    <p class='text-start'>
+                                    <strong>$ " . $sp['price'] * $sp['quantity'] . "</strong>
+                                    </p>
+                                    <div class='form-outline'>
+                                            <input id='form1' min='0' name='quantity' value='" . $sp['quantity'] . "' type='number' class='form-control' />
+                                            <label class='form-label' for='form1'></label>
+                                    </div>
+                                    <input type='hidden' name='id' value='" . $sp['id'] . "'>
+                                    <button type='submit' class='btn btn-primary btn-sm me-1 mb-2' data-mdb-toggle='tooltip' title='Remove item' name='cartaction' value='removeFromCart'>
                                         <i class='fas fa-trash'></i>
                                     </button>
                                     <button type='button' class='btn btn-danger btn-sm mb-2' data-mdb-toggle='tooltip' title='Move to the wish list'>
@@ -66,32 +71,17 @@ session_start();
                                     </button>
                                 
                                 </div>
-                                <div class='col-lg-4 col-md-6 mb-4 mb-lg-0'>
-                                    <!-- Quantity -->
-                                    <div class='d-flex mb-4' style='max-width: 300px'>
-                                       
-                                        <div class='form-outline'>
-                                            <input id='form1' min='0' name='quantity' value='" . $sp['quantity'] . "' type='number' class='form-control' />
-                                            <label class='form-label' for='form1'></label>
-                                        </div>
-                                    </div>
-                                   
-                                    <!-- Price -->
-                                    <p class='text-start text-md-center'>
-                                        <strong>$ " . $sp['price'] * $sp['quantity'] . "</strong>
-                                    </p>
-                                    
-                                </div>
+                             
                             </div>
                           
                             <hr class='my-4' />";
                             }
                             ?>
-                        </div>
+                        </form>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <form class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-header py-3">
                             <h5 class="mb-0">SUMMARY</h5>
@@ -109,20 +99,18 @@ session_start();
                                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                                     <div>
                                         <strong>Total amount</strong>
-                                        <strong>
-                                            <p class="mb-0">(including VAT)</p>
-                                        </strong>
+
                                     </div>
                                     <span><strong>$53.98</strong></span>
                                 </li>
                             </ul>
 
                             <button type="button" class="btn btn-primary btn-lg btn-block">
-                                Go to checkout
+                                PAYMENT
                             </button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
