@@ -1,8 +1,8 @@
-<html lang="en">
 <?php
 session_start();
 
- ?>
+?>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@ session_start();
                     <li class="nav-item">
                         <a class="nav-link" href="../users/shopping-cart.php">Cart</a>
                     </li>
-                    
+
                 </ul>
                 <form class="form-inline my-lg-0" action="../users/product.php" method="post">
                     <input class="form-control mr-sm-3" type="text" placeholder="Search" name="keyword" aria-label="Search">
@@ -51,30 +51,29 @@ session_start();
                     // require_once("../../Controllers/logoutController.php");
                     // $controller = new UserController();
                     // $controller->invoke();
-                     ?>  
-                   
-                   
-                  
-                    
+                    ?>
+
+
+
+
                     <ul class="subnav subnav-login ">
-                
-                    </li class="nav-item"> <a class="nav-link" href="../users/signin.php"> <?php
-                    if (isset($_SESSION['username'])) {
-                        $state = $_SESSION['username'];
-                        echo "<span class='username'>" . $state . "</span>";
-                    }else
-                    {
-                        echo "Log in";
-                    }
-                    ?></a>
-                    </li class="nav-item"> <a class="nav-link" href="../users/signup.php">Sign up</a>
-                    
-                    </li class="nav-item"> <a class="nav-link" href="../users/home.php"> <?php
-                    if (isset($_SESSION['username'])) {
-                        unset($_SESSION['username']);
-                       echo "Logout";
-                    }
-                    ?></a>
+
+                        </li class="nav-item"> <a class="nav-link" href="../users/signin.php"> <?php
+                                                                                                if (isset($_SESSION['username'])) {
+                                                                                                    $state = $_SESSION['username'];
+                                                                                                    echo "<span class='username'>" . $state . "</span>";
+                                                                                                } else {
+                                                                                                    echo "Log in";
+                                                                                                }
+                                                                                                ?></a>
+                        </li class="nav-item"> <a class="nav-link" href="../users/signup.php">Sign up</a>
+
+                        </li class="nav-item"> <a class="nav-link" href="../users/home.php"> <?php
+                                                                                                if (isset($_SESSION['username'])) {
+                                                                                                    unset($_SESSION['username']);
+                                                                                                    echo "Logout";
+                                                                                                }
+                                                                                                ?></a>
 
                     </ul>
 
