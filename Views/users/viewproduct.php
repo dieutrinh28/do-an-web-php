@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furni3dots - Product Detail</title>
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
-    <link rel="stylesheet" href="../../Public/CSS/productdetail.css">
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/footer.css">
+    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/productdetail.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- link owl carousel -->
@@ -26,26 +24,23 @@
     include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header.php");
     ?>
     <!-- body -->
-    <div class="body global">
-        <div class="left">
-            <?php
-            echo "<div class='item-img'>
-                     <img src='../../Assets/img/" . $product->getImage() . "'>
-                </div>"
-            ?>
-
-        </div>
-        <div class="right">
-            <div class="emojis">
-                <a href=""><i class="fas fa-angle-left"></i></a>
-                <a href=""><i class="fas fa-angle-right"></i></i></a>
-            </div>
-            <div id='content_border'>
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-7 left">
                 <?php
-                echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
-                echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
-                echo "<button class='btn btn-primary btn_addToCart' type='submit' name='action' value='Thêm vào giỏ'>ADD TO CART</button>"
+                echo "<div class='item-img'>
+                        <img src='../../Assets/img/" . $product->getImage() . "'>
+                    </div>"
                 ?>
+            </div>
+            <div class="col-5 right">
+                <div id='content_border'>
+                    <?php
+                    echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
+                    echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
+                    echo "<button class='btn btn-primary btn_addToCart' type='submit' name='action' value='Thêm vào giỏ'>ADD TO CART</button>"
+                    ?>
+                </div>
             </div>
         </div>
     </div>

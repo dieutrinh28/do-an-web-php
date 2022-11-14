@@ -33,19 +33,19 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../../Assets/img/chair-3-1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../Assets/img/sofa-2-1.jpg" class="d-block w-100" alt="...">
+                        <video autoplay muted preload loop width="100%"><source src="../../Assets/intro.mp4"></video>
                     </div>
                     <div class="carousel-item">
                         <img src="../../Assets/img/bed-1-2.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
+                        <img src="../../Assets/img/sofa-2-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
                         <img src="../../Assets/img/table-5-1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../../Assets/img/clock-8-1.jpg" class="d-block w-100" alt="...">
+                        <img src="../../Assets/img/bed-1-3.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
@@ -59,9 +59,9 @@
             </div>
         </div>
 
-        <div class="product-portfolio mt-5">
+        <div class="product-portfolio mt-3 mt-sm-5">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 portfolio_1">
                     <div class="card">
                         <a href="">
                             <div class="item-img">
@@ -70,12 +70,12 @@
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">Chair</h5>
                                 <h5 class="card-text items-content__price">20 Products</h5>
-                            </div>
+                            </div>                          
                         </a>
                     </div>
                 </div>
-                <div class="col-3 splitting">
-                    <div class="row-12 card mb-4">
+                <div class="col-3 portfolio_2 splitting">
+                    <div class="row-12 card mb-lg-2 mb-xl-4">
                         <a href="">
                             <div class="item-img">
                                 <img src="../../Assets/img/table-4-1.jpg" alt="">
@@ -98,8 +98,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-3 splitting">
-                    <div class="row-12 card mb-4">
+                <div class="col-3 portfolio_3 splitting">
+                    <div class="row-12 card mb-lg-2 mb-xl-4">
                         <a href="">
                             <div class="item-img">
                                 <img src="../../Assets/img/bed-1-1.jpg" alt="">
@@ -125,32 +125,32 @@
             </div>
         </div>
 
-        <div class="utilities mt-5">
+        <div class="utilities mt-3 mt-sm-5">
             <div class="row">
-                <div class="col-3 d-flex">
+                <div class="col-6 col-sm-3 d-flex utilities-text">
                     <i class="fas fa-globe"></i>
-                    <div class="pl-4">
+                    <div class="pl-2 pl-lg-3">
                         <p>Free Shipping And Return</p>
                         <span>Shop From Your Own Home</span>
                     </div>
                 </div>
-                <div class="col-3 d-flex">
+                <div class="col-6 col-sm-3 d-flex utilities-text">
                     <i class="fas fa-wallet"></i>
-                    <div class="pl-4">
+                    <div class="pl-2 pl-lg-3">
                         <p>Money Back Guarantee</p>
                         <span>Shop From Your Own Home</span>
                     </div>
                 </div>
-                <div class="col-3 d-flex">
+                <div class="col-6 col-sm-3 d-flex utilities-text">
                     <i class="fas fa-headphones"></i>
-                    <div class="pl-4">
-                        <p> Online Support 24/7</p>
+                    <div class="pl-2 pl-lg-3">
+                        <p>	Online Support 24/7</p>
                         <span>Shop From Your Own Home</span>
                     </div>
                 </div>
-                <div class="col-3 d-flex">
+                <div class="col-6 col-sm-3 d-flex utilities-text">
                     <i class="fas fa-cart-arrow-down"></i>
-                    <div class="pl-4">
+                    <div class="pl-2 pl-lg-3">
                         <p>Safe Payment</p>
                         <span>Shop From Your Own Home</span>
                     </div>
@@ -158,14 +158,14 @@
             </div>
         </div>
 
-        <div class="banner mt-5">
+        <div class="banner mt-3 mt-sm-5">
             <img src="../../Assets/banner.jpg" alt="">
         </div>
 
-        <div class="best-seller mt-5">
+        <div class="best-seller mt-3 mt-sm-5">
             <h4 class="text-center">BEST SELLER</h4>
             <div class="row">
-                <div class="col-3 card search-result__item">
+                <div class="col-6 col-lg-3 card search-result__item">
                     <a href="">
                         <div class="item-img">
                             <img src="../../Assets/img/chair-1-1.jpg" alt="">
@@ -173,13 +173,13 @@
                         <div class="card-body items-content">
                             <h5 class="card-title items-content__name">CIELO</h5>
                             <h5 class="card-text items-content__price">20 USD</h5>
-                        </div>
+                        </div>                          
                     </a>
                 </div>
-                <div class="col-3 card search-result__item">
+                <div class="col-6 col-lg-3 card search-result__item">
                     <a href="">
                         <div class="item-img">
-                            <img src="../../Assets/img/clock-7-1.jpg" alt="">
+                            <img src="../../Assets/img/clock-6-3.jpg" alt="">
                         </div>
                         <div class="card-body items-content">
                             <h5 class="card-title items-content__name">NAGI 2013</h5>
@@ -187,7 +187,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-3 card search-result__item">
+                <div class="col-6 col-lg-3 card search-result__item">
                     <a href="">
                         <div class="item-img">
                             <img src="../../Assets/img/bed-5-1.jpg" alt="">
@@ -198,10 +198,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-3 card search-result__item">
+                <div class="col-6 col-lg-3 card search-result__item">
                     <a href="">
                         <div class="item-img">
-                            <img src="../../Assets/img/chair-2-1.jpg" alt="">
+                            <img src="../../Assets/img/sofa-1-2.jpg" alt="">
                         </div>
                         <div class="card-body items-content">
                             <h5 class="card-title items-content__name">SAIL SOFA</h5>
@@ -212,24 +212,24 @@
             </div>
         </div>
 
-        <div class="sale mt-5">
+        <div class="sale mt-3 mt-sm-5">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-sm-6 mb-3">
                     <div class="card">
-                        <a href="">
-                            <div class="item-img">
-                                <img src="../../Assets/img/sofa-3-1.jpg" alt="">
-                            </div>
-                            <div class="card-body items-content">
-                                <h2>Mind-Blowing Discounts</h2>
-                                <h1><span>50%</span> OFF</h1>
-                                <p>Shop From Your Own Home</p>
-                                <button>Check Offers</button>
-                            </div>
-                        </a>
+                            <a href="">
+                                <div class="item-img">
+                                    <img src="../../Assets/img/sofa-3-3.jpg" alt="">
+                                </div>
+                                <div class="card-body items-content">
+                                    <h2>Mind-Blowing Discounts</h2>
+                                    <h1><span>50%</span> OFF</h1>
+                                    <p>Shop From Your Own Home</p>
+                                    <button>Check Offers</button>
+                                </div>                          
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6 mb-3">
                     <div class="card">
                         <a href="">
                             <div class="item-img">
@@ -238,15 +238,14 @@
                             <div class="card-body items-content">
                                 <h2>More Than 250 Products From</h2>
                                 <h1><span>$3.99</span></span> OFF</h3>
-                                    <p>Shop From Your Own Home</p>
-                                    <button>Shop now</button>
-                            </div>
+                                <p>Shop From Your Own Home</p>
+                                <button>Shop now</button>
+                            </div>                          
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <!--Footer-->

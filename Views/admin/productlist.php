@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furni3dots - List Products</title>
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
     <link rel="stylesheet" href="../../Public/CSS/product-ad.css">
 
     <!-- link bootstrap -->

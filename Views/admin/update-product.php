@@ -53,7 +53,7 @@
                 </section>
 
                 <section>
-                    <div class="input-block">
+                    <div class="input-block input-block_1">
                         <label for="Description">Description</label>
                         <input class="des" type="text" value='<?php echo $product->getDescription()  ?>' placeholder="Description" name="description"></input>
                     </div>

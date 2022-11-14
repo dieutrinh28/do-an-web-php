@@ -25,22 +25,20 @@
     ?>
     <!-- body -->
     <div class="container-fluid homepage px-5">
-
-        <div class='product py-5'>
+        <div class='product'>
             <div class='row'>
                 <?php
                 foreach ($products as $product)
-                    echo "<div class='col-3'>
-                            <div class =' card item chair'>
+                    echo "<div class='col-4 col-sm-3 card search-result__item'>
                                 <a href = 'product.php?productid=" . $product->getId() . "' >
                                     <div class='item-img'>
                                         <img src='../../Assets/img/" . $product->getImage() . "'>
                                     </div>
                                     <div class='card-body items-content'>
                                         <h5 class='card-title items-content__name'>" . $product->getName() . "</h5>
+                                        <h5 class='card-title items-content__name'>" . $product->getPrice() . "$</h5>
                                     </div>                          
                                 </a>
-                            </div>
                         </div>"
                 ?>
             </div>

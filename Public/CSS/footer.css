@@ -20,11 +20,11 @@
     align-items: center;
 }
 .my-footer img{
-    width: 30%;
+    width: 60%;
 }
 .my-footer .support-text i{
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 10px;
     color: #fff;
 }
 .my-footer a{
@@ -41,4 +41,58 @@
 .my-footer .infomaion a:hover{
     color: var(--bg-green);
     text-decoration: none;
+}
+.my-footer a{
+    font-size: 8px;
+}
+.my-footer p{
+    font-size: 6px;
+}
+.my-footer h4{
+    font-size: 10px;
+}
+@media only screen and (min-width: 576px){
+    .my-footer a{
+        font-size: 12px;
+    }
+    .my-footer h4{
+        font-size: 18px;
+    }
+    .my-footer p{
+        font-size: 10px;
+    }
+    .my-footer img{
+        width: 45%;
+    }
+    .my-footer .support-text i{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .my-footer a{
+        font-size: 12px;
+    }
+    .my-footer h4{
+        font-size: 16px;
+    }
+    .my-footer p{
+        font-size: 12px;
+    }
+    .my-footer img{
+        width: 30%;
+    }
+    .my-footer .support-text i{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .my-footer a{
+        font-size: 18px;  
+    }
+    .my-footer h4{
+        font-size: 22px;
+    }
+    .my-footer p{
+        font-size: unset;
+    }
 }

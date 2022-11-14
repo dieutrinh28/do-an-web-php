@@ -4,35 +4,6 @@
   padding: 0;
   font-family: "Jost", sans-serif;
 }
-body {
-  background-color: #f9f9f9;
-  margin: 0;
-}
-.emojis {
-  padding: 20px 0;
-  border-bottom: 1px solid rgb(214, 214, 214);
-  text-align: center;
-}
-.emojis .fa-angle-right:hover {
-  color: #009f4d;
-}
-.emojis .fa-angle-left:hover {
-  color: #009f4d;
-}
-.ctn {
-  margin: auto;
-  padding: auto;
-  width: 1200px;
-}
-.fas {
-  font-size: 50px;
-  margin: 5px 60px;
-  color: rgb(10 191 83 / 30%);
-}
-
-.body {
-  display: flex;
-}
 #pro_name {
   display: inline-block;
   color: #1a1a1a;
@@ -42,18 +13,18 @@ body {
   letter-spacing: 1px;
   line-height: 1.5;
 }
-.left {
-  padding: 30px 50px;
-  width: 60%;
-  display: inline-block;
-}
+.left{
+  background: red;
 
-.right {
-  width: 30%;
-  display: inline-block;
 }
-
-img {
+.left .item-img{
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.left .item-img img{
   width: 100%;
-  height: 0px auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
