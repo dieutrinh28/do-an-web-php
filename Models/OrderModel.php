@@ -1,9 +1,8 @@
 <?php
-require_once("../do-an-web-php/Classes/Order.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Classes/Order.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Modules/db_module.php");
 
-require_once("./Modules/db_module.php");
-
-class OrderModel 
+class OrderModel
 {
     public function getOrder()
     {

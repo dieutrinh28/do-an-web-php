@@ -1,6 +1,6 @@
 <?php
-require_once("../../Modules/db_module.php");
-require_once("../../Classes/User.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Classes/User.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Modules/db_module.php");
 require_once("../../Models/validate.php");
 class UserModel
 {
@@ -21,19 +21,17 @@ class UserModel
     {
         $allUser = $this->getUserList();
         $count = 0;
-        for($i=0;$i<count($allUser);$i++)
-        {
-            if($allUser[$i]->getUsername() == $username)
-            {
-                $count ++;
+        for ($i = 0; $i < count($allUser); $i++) {
+            if ($allUser[$i]->getUsername() == $username) {
+                $count++;
             }
         }
-        if($count == 0)
+        if ($count == 0)
             return true;
-        else    
+        else
             return false;
     }
-    public function register($username, $password, $email, $phoneNum, $address, $name,$confirmPass)
+    public function register($username, $password, $email, $phoneNum, $address, $name, $confirmPass)
     {
         $link = null;
         taoKetNoi($link);
@@ -42,28 +40,19 @@ class UserModel
         $valid =  validateLenUp($username);
         $valid =  validateLenUp($password);
 
-        if ($valid==true) {
-            if(existUsername($link,$username)>0)
-            {
+        if ($valid == true) {
+            if (existUsername($link, $username) > 0) {
                 return 1;
-            }
-            else
-            {
+            } else {
                 $query = "INSERT INTO tbl_user (username,password,email,name,phonenum,address) VALUES
-                        ('$username','".md5($password)."','$email','$name','$phoneNum','$address' )";
-                if (mysqli_query($link, $query))
-                {
+                        ('$username','" . md5($password) . "','$email','$name','$phoneNum','$address' )";
+                if (mysqli_query($link, $query)) {
                     return 0;
-                } 
-                else 
-                {
+                } else {
                     return 2;
                 }
-                    
             }
-        }
-        else
-        {
+        } else {
             return 3;
         }
     }
@@ -73,15 +62,15 @@ class UserModel
         $allusers = $this->getUserList();
         $count = 0;
         foreach ($allusers as $user) {
-            if ($username == $user->getUsername() && md5($password) == $user->getPassword())
-            {
+            if ($username == $user->getUsername() && md5($password) == $user->getPassword()) {
                 $count++;
                 $account = array(
-                    "name"=>$user->getName(),
+                    "name" => $user->getName(),
                     "username" => $user->getUsername(),
                     "fullname" => $user->getAddress(),
                     "email" => $user->getEmail(),
-                    "phoneNum"=>$user->getPhoneNum());
+                    "phoneNum" => $user->getPhoneNum()
+                );
                 $_SESSION['account'] = $account;
             }
         }

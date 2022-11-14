@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Furni3dots - Home</title>
   <link rel="stylesheet" href="../Public/CSS/header.css">
-  <link rel="stylesheet" href="../Public/CSS/productlist.css">
+  <link rel="stylesheet" href="../../Public/CSS/productlist.css">
   <link rel="stylesheet" href="../Public/CSS/footer.css">
   <!-- link bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -41,7 +41,7 @@
         <div class="column chair">
           <a href="">
             <div class="item-img">
-              <img src="../Assets/img/chair-1-1.jpg" alt="Chair" style="width:100%">
+              <img src="../../Assets/img/chair-1-1.jpg" alt="Chair" style="width:100%">
             </div>
             <div class="card-body items-content">
               <h5 class="card-title items-content__name">CIELO</h5>
@@ -52,7 +52,7 @@
         <div class="column chair">
           <a href="">
             <div class="item-img">
-              <img src="../Assets/img/chair-2-1.jpg" alt="Chair" style="width:100%">
+              <img src="../../Assets/img/chair-2-1.jpg" alt="Chair" style="width:100%">
             </div>
             <div class="card-body items-content">
               <h5 class="card-title items-content__name">CIELO</h5>

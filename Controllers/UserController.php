@@ -1,25 +1,23 @@
-<?php 
-    require_once ("../do-an-web-php/Models/UserModel.php");
-    class UserController
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Models/UserModel.php");
+class UserController
+{
+    public $model;
+    public function __construct()
     {
-        public $model;
-        public function __construct()
-        {
-            $this->model = new UserModel();
-        }
-        
-        public function invoke()
-        {
-            if(!isset($_GET['keyword'])){
-                $users = $this->model->getUserList();
-                //header("Location: ./Views/admin/customers.php");
-                include ("../do-an-web-php/Views/admin/customers.php");
-            }else if(isset($_GET['keyword']))
-            {
-                $users = $this->model->searchUser($_GET['keyword']);
-                include ("../do-an-web-php/Views/admin/customers.php");
-            }
-        }
-        
+        $this->model = new UserModel();
     }
-?>  
+
+    public function invokeAdmin()
+    {
+        $users = $this->model->getUserList();
+        //header("Location: ./Views/admin/customers.php");
+        include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/admin/customerlist.php");
+        // if (!isset($_POST['keyword'])) {
+
+        // } else if (isset($_POST['keyword'])) {
+        //     $users = $this->model->searchUser($_GET['keyword']);
+        //     include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/admin/customerlist.php");
+        // }
+    }
+}

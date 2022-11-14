@@ -29,7 +29,7 @@
                         <a class="nav-link" href="../users/product.php">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../users/cart.php">Cart</a>
+                        <a class="nav-link" href="../users/shopping-cart.php">Cart</a>
                     </li>
                     </li class="nav-item"> <a class="nav-link" href="../users/signin.php">Log in</a>
                 </ul>
