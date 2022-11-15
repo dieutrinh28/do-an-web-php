@@ -33,13 +33,14 @@
                         <div class="card-header py-3">
                             <h5 class="mb-0">SHOPPING CART</h5>
                         </div>
-                        <form class="card-body" action='../../Controllers/CartAction.php' method='post'>
+                        <div class="card-body">
                             <!-- Single item -->
                             <?php
                             if (isset($_SESSION['giohang'])) {
                                 $giohang = $_SESSION['giohang'];
                                 foreach ($giohang as $product => $sp)
                                     echo "<div class='row'>
+                                    <form action='../../Controllers/CartAction.php' method='post'>
                                 <div class='col-lg-3 col-md-12 mb-4 mb-lg-0'>
                                     <!-- Image -->
                                     <div class='bg-image hover-overlay hover-zoom ripple rounded' data-mdb-ripple-color='light'>
@@ -68,13 +69,14 @@
                                     </button>
                                 
                                 </div>
+                                </form>
                              
                             </div>
                           
                             <hr class='my-4' />";
                             }
                             ?>
-                        </form>
+                        </div>
                     </div>
                 </div>
 
@@ -87,7 +89,7 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                                     Products
-                                    <span>$53.98</span>
+                                    <span>$56</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                     Shipping
@@ -98,7 +100,7 @@
                                         <strong>Total amount</strong>
 
                                     </div>
-                                    <span><strong>$53.98</strong></span>
+                                    <span><strong>$56</strong></span>
                                 </li>
                             </ul>
 
