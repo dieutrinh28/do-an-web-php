@@ -45,12 +45,7 @@ session_start();
                 <div class="col-1 header_navbar-icon">
 
                     <?php
-                    // var_dump(is_dir($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Controllers/logoutController.php"));
-                    // //var_dump(is_dir("../do-an-web-php/Controllers/logoutController.php"));
-                    // exit;
-                    // require_once("../../Controllers/logoutController.php");
-                    // $controller = new UserController();
-                    // $controller->invoke();
+                   
                     ?>
 
 
@@ -63,12 +58,14 @@ session_start();
                                                                                                     $state = $_SESSION['username'];
                                                                                                     echo "<span class='username'>" . $state . "</span>";
                                                                                                 } else {
+
                                                                                                     echo "Log in";
                                                                                                 }
+                                                                                                
                                                                                                 ?></a>
                         </li class="nav-item"> <a class="nav-link" href="../users/signup.php">Sign up</a>
 
-                        </li class="nav-item"> <a class="nav-link" href="../users/home.php"> <?php
+                        </li class="nav-item"> <a class="nav-link" href="../users/login.php"> <?php
                                                                                                 if (isset($_SESSION['username'])) {
                                                                                                     unset($_SESSION['username']);
                                                                                                     echo "Logout";

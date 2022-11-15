@@ -33,6 +33,8 @@
                 require_once("../../Controllers/LoginController.php");
                 $controller = new UserController();
                 $controller->invoke();
+                require_once("../users/msg.php");
+
                 ?>
                 <p class="form-text">User name</p>
                 <input type="text" class="form-control" name="username" placeholder="Ex: Bich Ngan" required autocomplete>

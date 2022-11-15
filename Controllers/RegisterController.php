@@ -1,4 +1,7 @@
 <?php
+
+use JetBrains\PhpStorm\Internal\ReturnTypeContract;
+
 require_once '../../Models/UserModel.php';
 class UserController
 {
@@ -11,7 +14,7 @@ class UserController
     public function invoke()
     {
 
-        $errors = array();
+        
         if (isset($_POST['submitSignup'])) {
             switch ($this->model->register($_POST['username'], $_POST['password'], $_POST['email'], $_POST['phoneNum'], $_POST['address'], $_POST['name'], $_POST['confirmPass'])) {
                 case 0: {
@@ -19,18 +22,19 @@ class UserController
                         break;
                     }
                 case 1: {
-                        array_push($errors, "This account has been exist.");
+                       
                         header("Location: ../users/signup.php?msg=account_has_been_exist");
                         break;
                     }
                 case 3: {
-                        array_push($errors, "Your information is not valid.");
                         header("Location: ../users/signup.php?msg=invalid_input_data");
+                        
                         break;
                     }
                 default:
                     break;
             }
+            
         }
     }
 }

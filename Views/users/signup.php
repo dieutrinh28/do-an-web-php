@@ -32,8 +32,9 @@
             
              require_once("../../Controllers/RegisterController.php");
              $controller = new UserController();
+            
              $controller->invoke();
-             
+            require_once("../users/msg.php");
              //include('../../Models/errors.php'); 
              
             ?>
