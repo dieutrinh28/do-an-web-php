@@ -34,15 +34,14 @@
                             <h5 class="mb-0">SHOPPING CART</h5>
                         </div>
                         <div class="card-body">
-                            <!-- Single item -->
                             <?php
                             if (isset($_SESSION['giohang'])) {
                                 $giohang = $_SESSION['giohang'];
                                 foreach ($giohang as $product => $sp)
-                                    echo "<div class='row'>
-                                    <form action='../../Controllers/CartAction.php' method='post'>
-                                <div class='col-lg-3 col-md-12 mb-4 mb-lg-0'>
-                                    <!-- Image -->
+                                    echo "<form action='../../Controllers/CartAction.php' method='post'>
+                                    <div class='row'>
+                                    
+                                <div class='col-lg-3 col-md-6 mb-4 mb-lg-0'>
                                     <div class='bg-image hover-overlay hover-zoom ripple rounded' data-mdb-ripple-color='light'>
                                         <img src='../../Assets/img/" . $sp['image'] . "' class='w-100' alt='' />
                                         <a href='#!'>
@@ -51,7 +50,6 @@
                                     </div>
                                 </div>
                                 <div class='col-lg-5 col-md-6 mb-4 mb-lg-0'>
-                                    <!-- Data -->
                                     <p><strong>" . $sp['name'] . "</strong></p>
                                     <p class='text-start'>
                                     <strong>$ " . $sp['price'] * $sp['quantity'] . "</strong>
@@ -67,12 +65,9 @@
                                     <button type='button' class='btn btn-danger btn-sm mb-2' data-mdb-toggle='tooltip' title='Move to the wish list'>
                                         <i class='fas fa-heart'></i>
                                     </button>
-                                
-                                </div>
-                                </form>
-                             
+                                </div>                                
                             </div>
-                          
+                            </form>
                             <hr class='my-4' />";
                             }
                             ?>
@@ -89,7 +84,20 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                                     Products
-                                    <span>$56</span>
+                                    <?php
+                                    if (isset($_SESSION['giohang'])) {
+                                        $giohang = $_SESSION['giohang'];
+                                        foreach ($giohang as $product => $sp) {
+                                            if (!empty($sp['total'])) {
+                                                $total = $sp['total'];
+                                            }
+                                            //echo $total;
+                                        }
+                                        $total = (int)$sp['total'];
+                                        echo "<b>$$total</b>";
+                                    }
+                                    ?>
+
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                     Shipping
@@ -100,7 +108,7 @@
                                         <strong>Total amount</strong>
 
                                     </div>
-                                    <span><strong>$56</strong></span>
+                                    <span><strong>$<?php echo $total ?></strong></span>
                                 </li>
                             </ul>
 

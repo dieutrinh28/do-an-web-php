@@ -36,6 +36,6 @@ function tinhtien()
     $sum = 0;
     $cart = $_SESSION['giohang'];
     foreach ($cart as $v)
-        $sum += $v['soluong'] * $v['gia'];
+        $sum += $v['quantity'] * $v['price'];
     return number_format($sum);
 }
