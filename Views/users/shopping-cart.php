@@ -83,7 +83,7 @@
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                                    Products
+                                    Provisional
                                     <?php
                                     if (isset($_SESSION['giohang'])) {
                                         $giohang = $_SESSION['giohang'];
@@ -106,8 +106,8 @@
 
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                    Shipping
-                                    <span>Gratis</span>
+                                    Discount
+                                    <span>0</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                                     <div>
@@ -118,9 +118,9 @@
                                 </li>
                             </ul>
 
-                            <button type="button" class="btn btn-primary btn-lg btn-block">
-                                PAYMENT
-                            </button>
+                            <a type="button" href="./payment.php" class="btn btn-primary">
+                                PURCHASE
+                            </a>
                         </div>
                     </div>
                 </form>
