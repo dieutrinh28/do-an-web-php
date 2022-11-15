@@ -21,10 +21,11 @@ session_start();
 <body>
     <div class="container-fluid header">
         <nav class="navbar navbar-expand-lg">
-            <div class="navbar-logo" href="#">
-                <img src="../../Assets/logo.png" alt="">
-            </div>
-            <div class="navbar-collapse" id="navbarSupportedContent">
+            <div class="row">
+                <div class="col-xl-4 col-lg-3 col-sm-3 col-3 navbar-logo" href="#">
+                    <img src="../../Assets/logo.png" alt="">
+                </div>
+                <div class="col-xl-8 col-lg-9 col-sm-9 col-9 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="../users/home.php">HOME<span class="sr-only">(current)</span></a>
@@ -75,7 +76,8 @@ session_start();
 
                 </form>
                 
-            </div>
+                </div>
+            </div>         
         </nav>
     </div>
 </body>

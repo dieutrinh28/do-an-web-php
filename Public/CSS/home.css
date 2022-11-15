@@ -7,6 +7,9 @@
   --bg-green: #84b082;
   --bg-dark-green: #5d7565;
 }
+.homepage{
+  margin-top: 65px;
+}
 /* carousel */
 .carousel .carousel-item{
   overflow: hidden;
