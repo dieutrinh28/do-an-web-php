@@ -23,7 +23,9 @@ session_start();
         <nav class="navbar navbar-expand-lg">
             <div class="row">
             <div class="col-xl-4 col-lg-3 col-sm-3 col-3 navbar-logo" href="#">
+                <a href="../users/home.php">
                 <img src="../../Assets/logo.png" alt="">
+                </a>
             </div>
             <div class="col-xl-8 col-lg-9 col-sm-9 col-9 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
