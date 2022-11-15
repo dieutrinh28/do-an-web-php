@@ -43,35 +43,26 @@ session_start();
                     <i class="fas fa-search nav-icon-search" type="submit"></i>
                 </form>
                 <div class="col-1 header_navbar-icon">
-
-                    <?php
-                   
-                    ?>
-
-
-
-
                     <ul class="subnav subnav-login ">
+                        </li class="nav-item"> <a class="nav-link" href="../users/signin.php">
+                            <?php
+                            if (isset($_SESSION['username'])) {
+                                $state = $_SESSION['username'];
+                                echo "<span class='username'>" . $state . "</span>";
+                            } else {
 
-                        </li class="nav-item"> <a class="nav-link" href="../users/signin.php"> <?php
-                                                                                                if (isset($_SESSION['username'])) {
-                                                                                                    $state = $_SESSION['username'];
-                                                                                                    echo "<span class='username'>" . $state . "</span>";
-                                                                                                } else {
-
-                                                                                                    echo "Log in";
-                                                                                                }
-                                                                                                
-                                                                                                ?></a>
+                                echo "Log in";
+                            }
+                            ?></a>
                         </li class="nav-item"> <a class="nav-link" href="../users/signup.php">Sign up</a>
 
-                        </li class="nav-item"> <a class="nav-link" href="../users/login.php"> <?php
-                                                                                                if (isset($_SESSION['username'])) {
-                                                                                                    unset($_SESSION['username']);
-                                                                                                    echo "Logout";
-                                                                                                }
-                                                                                                ?></a>
-
+                        </li class="nav-item"> <a class="nav-link" href="../users/login.php">
+                            <?php
+                            if (isset($_SESSION['username'])) {
+                                unset($_SESSION['username']);
+                                echo "Logout";
+                            }
+                            ?></a>
                     </ul>
 
                 </div>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require_once("../../Models/UserModel.php");
 class UserController
@@ -11,14 +11,11 @@ class UserController
 
     public function invoke()
     {
-      
-        var_dump( $_SESSION['username']);
-        exit;
+        // var_dump( $_SESSION['username']);
+        // exit;
         // if($this->model->Logout($username))
         // {
         //     header("Location: ../users/signin.php");
         // }
-
     }
 }
-?>

@@ -18,11 +18,11 @@ if (isset($_POST['cartcontroller'])) {
         switch ($_POST['cartcontroller']) {
             case "addToCart":
                 themhangvaogio($product);
-                header("Location: ../Views/users/product.php");
+                header("Location: ../Views/users/product.php?msg=add-success");
                 break;
             case "buyNow":
                 themhangvaogio($product);
-                header("Location: ../Views/users/shopping-cart.php");
+                header("Location: ../Views/users/shopping-cart.php?msg=add-success");
                 break;
             default:
                 break;

@@ -28,15 +28,12 @@
         <h4 class="text-center">Sign up</h4>
         <form method="post">
 
-            <?php //include('../do-an-web-php/Models/errors.php'); 
-            
-             require_once("../../Controllers/RegisterController.php");
-             $controller = new UserController();
-            
-             $controller->invoke();
+            <?php
+            require_once("../../Controllers/RegisterController.php");
+            $controller = new UserController();
+            $controller->invoke();
+
             require_once("../users/msg.php");
-             //include('../../Models/errors.php'); 
-             
             ?>
 
             <p>Full name</p>
@@ -57,10 +54,10 @@
                 <p class="w-50">Confirm password</p>
             </div>
             <div class="d-flex">
-                <input type="password" class="form-control mr-2 w-50" name="password" placeholder="Password">     
+                <input type="password" class="form-control mr-2 w-50" name="password" placeholder="Password">
                 <input type="password" class="form-control w-50" name="confirmPass" placeholder="Confirm password">
             </div>
-            
+
             <div class="d-flex mt-4">
                 <button class="btn btn-signup w-50" type="submit" name="submitSignup">SIGN UP</button>
                 <a class="btn btn-signin w-50" href="../users/signin.php">SIGN IN</a>

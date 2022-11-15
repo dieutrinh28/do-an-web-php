@@ -39,14 +39,14 @@ session_start();
                     </li>
                 </ul>
                 <!-- <a href="" class="w-25 px-5"><i class="fas fa-user-cog pr-2"></i>logout</a> -->
-                </li class="nav-item"> <a class="nav-link" href="../users/home.php"> <?php
+                </li class="nav-item"> <a class="nav-link" href="../users/home.php">
+                    <?php
                     if (isset($_SESSION['username'])) {
                         unset($_SESSION['username']);
-                       echo "Logout";
+                        echo "Logout";
                     }
-                    
                     ?></a>
-                
+
             </div>
         </nav>
     </div>

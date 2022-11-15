@@ -13,8 +13,6 @@ class UserController
 
     public function invoke()
     {
-
-        
         if (isset($_POST['submitSignup'])) {
             switch ($this->model->register($_POST['username'], $_POST['password'], $_POST['email'], $_POST['phoneNum'], $_POST['address'], $_POST['name'], $_POST['confirmPass'])) {
                 case 0: {
@@ -22,19 +20,16 @@ class UserController
                         break;
                     }
                 case 1: {
-                       
                         header("Location: ../users/signup.php?msg=account_has_been_exist");
                         break;
                     }
                 case 3: {
                         header("Location: ../users/signup.php?msg=invalid_input_data");
-                        
                         break;
                     }
                 default:
                     break;
             }
-            
         }
     }
 }
