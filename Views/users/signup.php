@@ -24,7 +24,7 @@
     include_once '../blocks/header.php';
     ?>
     <!-- body -->
-    <div class="container signup my-5">
+    <div class="container signup">
         <h4 class="text-center">Sign up</h4>
         <form method="post">
 

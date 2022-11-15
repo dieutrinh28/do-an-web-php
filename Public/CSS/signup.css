@@ -7,6 +7,9 @@
     --bg-green: #84b082;
     --bg-dark-green: #5d7565;
 }
+.signup{
+    margin-top: 90px;
+}
 .signup form{
     width: 50%;
     margin: 0 auto;

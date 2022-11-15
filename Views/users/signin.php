@@ -24,7 +24,7 @@
     include_once("../blocks/header.php");
 
     ?>
-    <div class="container login mt-5">
+    <div class="container login">
         <h4 class="text-center">Sign in</h4>
 
         <form class="w-50 mx-auto" method="post">
