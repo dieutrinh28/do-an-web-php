@@ -30,7 +30,7 @@
                 <p class="d-flex support-text mb-2">
                     <i class="fas fa-phone-alt"></i>
                     <a href="">0935050924</a>
-                </p>    
+                </p>
             </div>
             <div class="infomaion col-3 col-sm-3 text-center">
                 <h4 class="mb-2 mb-sm-3">Customer Service</h4>

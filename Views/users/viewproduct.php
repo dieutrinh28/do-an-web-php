@@ -27,24 +27,27 @@
     ?>
     <!-- body -->
     <div class="container-fluid px-5">
+        <?php
+        require_once("../users/msg.php");
+        ?>
         <form action="../../Controllers/CartController.php" method="post">
             <div class="row">
-            <div class="col-7 left">
-                <?php
-                echo "<div class='item-img'>
+                <div class="col-7 left">
+                    <?php
+                    echo "<div class='item-img'>
                      <img src='../../Assets/img/" . $product->getImage() . "'>
                 </div>"
-                ?>
+                    ?>
 
-            </div>
-            <div class="col-5 right">
-                
-                <div id='content_border'>
-                    <?php
-                    echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
-                    echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
-                    echo
-                    "
+                </div>
+                <div class="col-5 right">
+
+                    <div id='content_border'>
+                        <?php
+                        echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
+                        echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
+                        echo
+                        "
                     <div>
                     <input type='hidden' name='id' value='" . $product->getId() . "'>
                     <input type='hidden' name='name' value='" . $product->getName() . "'>
@@ -55,9 +58,9 @@
                     <button class='btn btn-primary btn_addToCart' type='submit' name='cartcontroller' value='buyNow'>BUY NOW</button>
                     </div>
                     "
-                    ?>
+                        ?>
+                    </div>
                 </div>
-            </div>
             </div>
         </form>
     </div>

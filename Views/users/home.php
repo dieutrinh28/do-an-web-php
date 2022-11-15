@@ -21,10 +21,7 @@
 
 <body>
     <!-- header -->
-
     <?php
-    // var_dump($_SERVER['REQUEST_URL']);
-    // exit;
     include_once '../blocks/header.php';
     ?>
     <!-- body -->
@@ -33,7 +30,9 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <video autoplay muted preload loop width="100%"><source src="../../Assets/intro.mp4"></video>
+                        <video autoplay muted preload loop width="100%">
+                            <source src="../../Assets/intro.mp4">
+                        </video>
                     </div>
                     <div class="carousel-item">
                         <img src="../../Assets/img/bed-1-2.jpg" class="d-block w-100" alt="...">
@@ -70,7 +69,7 @@
                             <div class="card-body items-content">
                                 <h5 class="card-title items-content__name">Chair</h5>
                                 <h5 class="card-text items-content__price">20 Products</h5>
-                            </div>                          
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -144,7 +143,7 @@
                 <div class="col-6 col-sm-3 d-flex utilities-text">
                     <i class="fas fa-headphones"></i>
                     <div class="pl-2 pl-lg-3">
-                        <p>	Online Support 24/7</p>
+                        <p> Online Support 24/7</p>
                         <span>Shop From Your Own Home</span>
                     </div>
                 </div>
@@ -173,7 +172,7 @@
                         <div class="card-body items-content">
                             <h5 class="card-title items-content__name">CIELO</h5>
                             <h5 class="card-text items-content__price">20 USD</h5>
-                        </div>                          
+                        </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-3 card search-result__item">
@@ -216,19 +215,19 @@
             <div class="row">
                 <div class="col-12 col-sm-6 mb-3">
                     <div class="card">
-                            <a href="">
-                                <div class="item-img">
-                                    <img src="../../Assets/img/sofa-3-3.jpg" alt="">
-                                </div>
-                                <div class="card-body items-content">
-                                    <h2>Mind-Blowing Discounts</h2>
-                                    <h1><span>50%</span> OFF</h1>
-                                    <p>Shop From Your Own Home</p>
-                                    <button>Check Offers</button>
-                                </div>                          
-                            </a>
-                        </div>
+                        <a href="">
+                            <div class="item-img">
+                                <img src="../../Assets/img/sofa-3-3.jpg" alt="">
+                            </div>
+                            <div class="card-body items-content">
+                                <h2>Mind-Blowing Discounts</h2>
+                                <h1><span>50%</span> OFF</h1>
+                                <p>Shop From Your Own Home</p>
+                                <button>Check Offers</button>
+                            </div>
+                        </a>
                     </div>
+                </div>
                 <div class="col-12 col-sm-6 mb-3">
                     <div class="card">
                         <a href="">
@@ -238,21 +237,19 @@
                             <div class="card-body items-content">
                                 <h2>More Than 250 Products From</h2>
                                 <h1><span>$3.99</span></span> OFF</h3>
-                                <p>Shop From Your Own Home</p>
-                                <button>Shop now</button>
-                            </div>                          
+                                    <p>Shop From Your Own Home</p>
+                                    <button>Shop now</button>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!--Footer-->
     <?php
     include_once '../blocks/footer.php';
     ?>
-
     <!-- link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

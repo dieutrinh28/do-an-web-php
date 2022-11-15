@@ -23,6 +23,9 @@
     <?php
     include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header.php");
     ?>
+    <?php
+    require_once("../users/msg.php");
+    ?>
     <!-- body -->
     <div class="container-fluid product px-5">
         <div class='product'>

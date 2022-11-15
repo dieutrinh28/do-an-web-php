@@ -25,8 +25,7 @@ class UserController
                     header("Location: ../users/home.php");
                 }
             } else {
-                // array_push($errors, "Wrong username or password !");
-                header("Location: ../users/signin.php");
+                header("Location: ../users/signin.php?msg=false");
             }
         } else {
         }

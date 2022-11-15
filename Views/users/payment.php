@@ -24,7 +24,6 @@
     <?php
     include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header.php");
     ?>
-
     <section class="h-100 gradient-custom">
         <div class="container py-5">
             <div class="row d-flex justify-content-center my-4">
@@ -57,8 +56,6 @@
                                         <input required type="text" class="form-control" id="inputSuccess2" placeholder="address" name="Address">
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                         <div class="card mb-4">
@@ -156,7 +153,6 @@
                                         echo "<b>$$total</b>";
                                     }
                                     ?>
-
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                                     Transport fee
