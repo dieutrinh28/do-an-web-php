@@ -10,4 +10,10 @@
 }
 .purchase:hover{
     background: #5d7565;
+    color: #fff;
+    text-decoration: none;
+}
+.purchase:hover a{
+    color: #fff;
+    text-decoration: none;
 }
