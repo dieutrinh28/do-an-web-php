@@ -25,7 +25,7 @@
 
     ?>
     <div class="container login">
-        <h4 class="text-center">Sign in</h4>
+        <h4 class="text-center">SIGN IN</h4>
 
         <form class="w-50 mx-auto" method="post">
             <div class="form-group">

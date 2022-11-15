@@ -121,7 +121,7 @@
                                 </li>
                             </ul>
 
-                            <a type="button" href="./payment.php" class="btn btn-primary">
+                            <a type="button" href="./payment.php" class="purchase">
                                 PURCHASE
                             </a>
                         </div>

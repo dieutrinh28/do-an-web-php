@@ -25,7 +25,7 @@
     ?>
     <!-- body -->
     <div class="container signup">
-        <h4 class="text-center">Sign up</h4>
+        <h4 class="text-center">SIGN UP</h4>
         <form method="post">
 
             <?php

@@ -71,7 +71,6 @@
 .navbar .navbar-nav li{
     padding: 0 10px;
 }
-
 .navbar .form-control:focus{
     border: none;
     box-shadow: none;
@@ -87,7 +86,7 @@
     width: 80px !important;
 }
 .navbar .form-inline{
-    margin-left: 100px;
+    margin-left: 20px;
     display: inline-block;
 }
 @media only screen and (min-width: 576px){

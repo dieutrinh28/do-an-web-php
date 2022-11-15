@@ -21,7 +21,7 @@
     include_once '../blocks/header-admin.php';
     ?>
 
-    <div class="container-fluid px-5 w-50">
+    <div class="container-fluid w-50">
         <h2 class="mt-5 mb-3">LIST OF ORDER</h2>
         <table class="mb-5 productlist">
             <thead>

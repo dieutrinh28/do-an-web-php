@@ -51,7 +51,7 @@ session_start();
                                 $state = $_SESSION['username'];
                                 echo "<span class='username'>" . $state . "</span>";
                             } else {
-                                echo "Log in";
+                                echo "Sign in";
                             }
                             ?>
                         </a>

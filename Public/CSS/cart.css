@@ -1,3 +1,13 @@
 .gradient-custom{
     padding-top: 70px;
 }
+.purchase{
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    background: #84b082;
+}
+.purchase:hover{
+    background: #5d7565;
+}
