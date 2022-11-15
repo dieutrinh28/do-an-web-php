@@ -18,25 +18,26 @@ session_start();
 </head>
 
 <body>
-    <div class="container-fluid header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="navbar-logo" href="#">
+<nav class="navbar navbar-expand-lg">
+            <div class="row">
+            <div class="col-xl-4 col-lg-3 col-sm-3 col-3 navbar-logo" href="#">
                 <img src="../../Assets/logo.png" alt="">
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="col-xl-8 col-lg-9 col-sm-9 col-9 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../admin/product.php">PRODUCT<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../admin/product.php">PRODUCT<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link" href="../admin/create.php">NEW PRODUCT</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link" href="../admin/customers.php">CUSTOMER</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../admin/orders.php">ORDER</a>
                     </li>
+
                 </ul>
                 <!-- <a href="" class="w-25 px-5"><i class="fas fa-user-cog pr-2"></i>logout</a> -->
                 </li class="nav-item"> <a class="nav-link" href="../users/home.php">
@@ -46,7 +47,7 @@ session_start();
                         echo "Logout";
                     }
                     ?></a>
-
+            </div>
             </div>
         </nav>
     </div>

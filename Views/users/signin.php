@@ -37,7 +37,7 @@
 
                 ?>
                 <p class="form-text">User name</p>
-                <input type="text" class="form-control" name="username" placeholder="Ex: Bich Ngan" required autocomplete>
+                <input type="text" class="form-control" name="username" placeholder="bichnganhz" required autocomplete>
                 <p class="form-text mt-3">Password</p>
 
                 <input type="password" class="form-control" name="password" placeholder="password" required autocomplete>

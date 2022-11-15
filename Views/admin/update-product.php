@@ -21,7 +21,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header-admin.php");
     ?>
 
-    <div class="container-fluid px-5 add-product mt-5">
+    <div class="container-fluid px-5 add-product">
 
         <form action="" method="POST">
             <h2 class="mb-3">UPDATE PRODUCT</h2>

@@ -23,10 +23,6 @@
 
     <div class="container-fluid px-5 w-50">
         <h2 class="mt-5 mb-3">LIST OF ORDER</h2>
-        <form class="form-inline my-lg-0">
-            <input class="form-control mr-sm-4" type="search" placeholder="Search" aria-label="Search">
-            <i class="fas fa-search nav-icon-search"></i>
-        </form>
         <table class="mb-5 productlist">
             <thead>
                 <tr>
@@ -36,10 +32,6 @@
                     </th>
                     <th>
                         <h1>USER ID</h1>
-                    </th>
-                    <th>
-                        <h1>ACTION</h1>
-                        </h1>
                     </th>
                 </tr>
             </thead>
@@ -53,12 +45,7 @@
                     <tr>
                         <td><?php echo $order->getTime() ?></td>
                         <td><?php echo $order->getUser() ?></td>
-                        <td>
-                            <form method="get">
-                                <input type="submit" name="detail" value="More detail" />
-
-                            </form>
-                        </td>
+ 
                     </tr>
 
                 <?php

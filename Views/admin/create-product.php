@@ -23,7 +23,7 @@
 
 
 
-    <div class="container-fluid px-5 add-product mt-5">
+    <div class="container-fluid px-5 add-product">
         <form method="POST">
             <h2 class="mb-3">CREATE PRODUCT</h2>
             <fieldset>

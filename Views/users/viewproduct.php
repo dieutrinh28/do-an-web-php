@@ -24,7 +24,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header.php");
     ?>
     <!-- body -->
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-5 viewproduct">
         <?php
         require_once("../users/msg.php");
         ?>
@@ -42,8 +42,9 @@
 
                     <div id='content_border'>
                         <?php
-                        echo "<b id='pro_name'>" . $product->getName() . "</b> </br>";
-                        echo "<b>Description: </b>" . $product->getDescription() . "<br/>";
+                        echo "<div class='name'><p id='pro_name'>" . $product->getName() . "</p></div>";
+                        echo "<div class='price'><p>$" . $product->getPrice() . "</p></div></br>";
+                        echo "<p>Description: </p>" . $product->getDescription() . "<br/>";
                         echo
                         "
                     <div>
@@ -52,8 +53,8 @@
                     <input type='hidden' name='price' value='" . $product->getPrice() . "'>
                     <input type='hidden' name='image' value='" . $product->getImage() . "'>
                     <input type='hidden' name='quantity' value='1'>
-                    <button class='btn btn-primary btn_addToCart btn_1' type='submit' name='cartcontroller' value='addToCart'>ADD TO CART</button>
-                    <button class='btn btn-primary btn_addToCart btn_2' type='submit' name='cartcontroller' value='buyNow'>BUY NOW</button>
+                    <button class='addtocart' type='submit' name='cartcontroller' value='addToCart'>ADD TO CART</button>
+                    <button class='buynow' type='submit' name='cartcontroller' value='buyNow'>BUY NOW</button>
                     </div>
                     "
                         ?>

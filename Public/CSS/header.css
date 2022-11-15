@@ -71,9 +71,7 @@
 .navbar .navbar-nav li{
     padding: 0 10px;
 }
-.navbar .form-inline{
-    margin-left: 180px;
-}
+
 .navbar .form-control:focus{
     border: none;
     box-shadow: none;
@@ -87,6 +85,10 @@
 .navbar input{
     height: 23px;
     width: 80px !important;
+}
+.navbar .form-inline{
+    margin-left: 100px;
+    display: inline-block;
 }
 @media only screen and (min-width: 576px){
     .navbar .form-inline{
@@ -139,14 +141,13 @@
 .navbar .dropdown {
   position: relative;
   display: inline-block;
-  margin-left: 30px;
 }
 @media only screen and (max-width: 576px){
     .navbar .dropdown{
         margin-left: 15px;
     }
 }
-@media only screen and (max-width: 992px){
+@media (min-width: 576px) and (max-width: 992px){
     .navbar .dropdown{
         margin-left: 30px;
     }

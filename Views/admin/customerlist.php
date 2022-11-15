@@ -23,10 +23,6 @@
 
     <div class="container-fluid px-5">
         <h2 class="mt-5 mb-3">LIST OF CUSTOMER</h2>
-        <form class="form-inline my-lg-0">
-            <input class="form-control mr-sm-4" type="search" name="keyword" placeholder="Search" aria-label="Search">
-            <i class="fas fa-search nav-icon-search" name="submit"></i>
-        </form>
         <table class="mb-5 productlist">
             <thead>
                 <tr>
