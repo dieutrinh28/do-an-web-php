@@ -24,7 +24,7 @@
     include($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Views/blocks/header.php");
     ?>
     <!-- body -->
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-5 viewproduct">
         <?php
         require_once("../users/msg.php");
         ?>
