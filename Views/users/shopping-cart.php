@@ -87,13 +87,19 @@
                                     <?php
                                     if (isset($_SESSION['giohang'])) {
                                         $giohang = $_SESSION['giohang'];
+                                        $price = 0;
+                                        $total = 0;
                                         foreach ($giohang as $product => $sp) {
+
                                             if (!empty($sp['total'])) {
-                                                $total = $sp['total'];
+                                                $total = 0;
+                                                $price += (int)$sp['total'];
+                                            } else {
+                                                $total = 0;
+                                                $price = 0;
                                             }
-                                            //echo $total;
                                         }
-                                        $total = (int)$sp['total'];
+                                        $total = $total + $price;
                                         echo "<b>$$total</b>";
                                     }
                                     ?>
