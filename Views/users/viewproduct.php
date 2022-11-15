@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furni3dots - Product Detail</title>
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/header.css">
     <link rel="stylesheet" href="../../Public/CSS/productdetail.css">
-    <link rel="stylesheet" href="../do-an-web-php/Public/CSS/footer.css">
     <!-- link bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- link owl carousel -->
@@ -54,8 +52,8 @@
                     <input type='hidden' name='price' value='" . $product->getPrice() . "'>
                     <input type='hidden' name='image' value='" . $product->getImage() . "'>
                     <input type='hidden' name='quantity' value='1'>
-                    <button class='btn btn-primary btn_addToCart' type='submit' name='cartcontroller' value='addToCart'>ADD TO CART</button>
-                    <button class='btn btn-primary btn_addToCart' type='submit' name='cartcontroller' value='buyNow'>BUY NOW</button>
+                    <button class='btn btn-primary btn_addToCart btn_1' type='submit' name='cartcontroller' value='addToCart'>ADD TO CART</button>
+                    <button class='btn btn-primary btn_addToCart btn_2' type='submit' name='cartcontroller' value='buyNow'>BUY NOW</button>
                     </div>
                     "
                         ?>

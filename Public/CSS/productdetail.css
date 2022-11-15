@@ -13,10 +13,6 @@
   letter-spacing: 1px;
   line-height: 1.5;
 }
-.left{
-  background: red;
-
-}
 .left .item-img{
   height: 600px;
   overflow: hidden;
@@ -27,4 +23,26 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+button{
+  margin-top: 50px;
+}
+.btn_1{
+  padding: 10px 15px;
+  color: #fff;
+  background: var(--bg-green);
+}
+
+.btn_1:hover{
+  color: #fff;
+  background: var(--bg-dark-green);
+}
+.btn_2{
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: 1px solid var(--bg-green);
+}
+.btn_2:hover{
+  background: var(--bg-dark-green);
+  color: #fff;
 }
