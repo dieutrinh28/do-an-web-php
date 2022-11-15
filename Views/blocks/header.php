@@ -21,11 +21,10 @@ session_start();
 <body>
     <div class="container-fluid header">
         <nav class="navbar navbar-expand-lg">
-            <div class="row">
-                <div class="col-xl-4 col-lg-3 col-sm-3 col-3 navbar-logo" href="#">
-                    <img src="../../Assets/logo.png" alt="">
-                </div>
-                <div class="col-xl-8 col-lg-9 col-sm-9 col-9 navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-logo" href="#">
+                <img src="../../Assets/logo.png" alt="">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="../users/home.php">HOME<span class="sr-only">(current)</span></a>
@@ -41,43 +40,34 @@ session_start();
                 <form class="form-inline my-lg-0" action="../users/product.php" method="post">
                     <input class="form-control mr-sm-3" type="text" placeholder="Search" name="keyword" aria-label="Search">
                     <i class="fas fa-search nav-icon-search" type="submit"></i>
-                    <div class="dropdown header_navbar-icon">
-                        <i class="dropbtn fas fa-user nav-icon-search"></i>
-                        <div class="dropdown-content">
-                            <a href="../users/signin.php"> 
-                                <?php
-                                    if (isset($_SESSION['username'])) {
-                                        $state = $_SESSION['username'];
-                                        echo "<span class='username'>" . $state . "</span>";
-                                    } else {
-                                        echo "Log in";
-                                    }
-                                ?>
-                            </a>
-                            <a href="../users/signup.php">Sign up</a>
-                            <a href="../users/home.php"> 
-                                <?php
-                                    if (isset($_SESSION['username'])) {
-                                        unset($_SESSION['username']);
-                                        echo "Logout";
-                                    }
-                                ?>
-                            </a>
-                        </div>
-                    </div>
-                    <?php
-                    // var_dump(is_dir($_SERVER['DOCUMENT_ROOT'] . "/do-an-web/do-an-web-php/Controllers/logoutController.php"));
-                    // //var_dump(is_dir("../do-an-web-php/Controllers/logoutController.php"));
-                    // exit;
-                    // require_once("../../Controllers/logoutController.php");
-                    // $controller = new UserController();
-                    // $controller->invoke();
-                    ?>                    
-
                 </form>
-                
+                <div class="dropdown header_navbar-icon">
+                    <i class="dropbtn fas fa-user nav-icon-search"></i>
+                    <div class="dropdown-content subnav subnav-login ">
+                        <a href="../users/signin.php">
+                            <?php
+                            if (isset($_SESSION['username'])) {
+                                $state = $_SESSION['username'];
+                                echo "<span class='username'>" . $state . "</span>";
+                            } else {
+                                echo "Log in";
+                            }
+                            ?>
+                        </a>
+                        <a href="../users/signup.php">Sign up</a>
+                        <a href="../users/signin.php">
+                            <?php
+                            if (isset($_SESSION['username'])) {
+                                unset($_SESSION['username']);
+                                echo "Logout";
+                            }
+                            ?>
+                        </a>
+
+                    </div>
+
                 </div>
-            </div>         
+            </div>
         </nav>
     </div>
 </body>
